@@ -17,11 +17,11 @@ workflows:
       xcode: "16.0"
       cocoapods: default
     scripts:
-      - name: Install CocoaPods dependencies
-        script: |
-          pod install
-      - name: Set up provisioning profiles settings on Xcode project
-        script: xcode-project use-profiles
+#      - name: Install CocoaPods dependencies
+#        script: |
+#          pod install
+#      - name: Set up provisioning profiles settings on Xcode project
+#        script: xcode-project use-profiles
 #      - name: Increment build number
 #        script: |
 #          cd $CM_BUILD_DIR
