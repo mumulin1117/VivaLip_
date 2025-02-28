@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoboBeautyLoungeController" customModule="VivaLip" customModuleProvider="target">
+            <connections>
+                <outlet property="bannerVlImage" destination="bKv-bo-Dx9" id="TVB-zS-syq"/>
+                <outlet property="botFactoryTablelist" destination="eTS-Ff-RRL" id="g2u-YE-Rki"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vlMenuSuper" destination="Kdb-J0-rbT" id="9YB-2G-2kI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="493" height="1063"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoboBeautyLounge" translatesAutoresizingMaskIntoConstraints="NO" id="15R-PN-gdO">
+                    <rect key="frame" x="0.0" y="0.0" width="493" height="1063"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vivalipBackground" translatesAutoresizingMaskIntoConstraints="NO" id="BA1-9B-tOl">
+                    <rect key="frame" x="0.0" y="50" width="493" height="58"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vlBanner" translatesAutoresizingMaskIntoConstraints="NO" id="bKv-bo-Dx9">
+                    <rect key="frame" x="9" y="125" width="475" height="104"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAd-rL-aOW">
+                    <rect key="frame" x="445" y="62.666666666666657" width="33" height="33"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="createVlBot"/>
+                    <connections>
+                        <action selector="createPersonalizedGlamBotWithFeatures:" destination="-1" eventType="touchUpInside" id="aa4-Cs-444"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kdb-J0-rbT">
+                    <rect key="frame" x="9" y="245" width="475" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="cxj-OK-c2h"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eTS-Ff-RRL">
+                    <rect key="frame" x="0.0" y="293" width="493" height="736"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yCs-62-3ak"/>
+                        <outlet property="delegate" destination="-1" id="Umf-pH-myh"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="15R-PN-gdO" secondAttribute="trailing" id="0C1-dv-H5n"/>
+                <constraint firstItem="BA1-9B-tOl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="11Y-WZ-xBC"/>
+                <constraint firstItem="BA1-9B-tOl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="4pr-xI-igD"/>
+                <constraint firstItem="lAd-rL-aOW" firstAttribute="centerY" secondItem="BA1-9B-tOl" secondAttribute="centerY" id="5zp-Kn-c4b"/>
+                <constraint firstItem="eTS-Ff-RRL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="792-1N-Aol"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eTS-Ff-RRL" secondAttribute="bottom" id="8hB-MZ-YLM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BA1-9B-tOl" secondAttribute="trailing" id="A8Y-rK-Ayp"/>
+                <constraint firstItem="bKv-bo-Dx9" firstAttribute="top" secondItem="BA1-9B-tOl" secondAttribute="bottom" constant="17" id="AgR-0u-7F4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lAd-rL-aOW" secondAttribute="trailing" constant="15" id="BNN-bu-l6B"/>
+                <constraint firstItem="15R-PN-gdO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EOo-Sx-t25"/>
+                <constraint firstItem="15R-PN-gdO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JkF-5s-eAN"/>
+                <constraint firstItem="Kdb-J0-rbT" firstAttribute="leading" secondItem="bKv-bo-Dx9" secondAttribute="leading" id="Tc5-xg-G51"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bKv-bo-Dx9" secondAttribute="trailing" constant="9" id="aes-kU-U9C"/>
+                <constraint firstItem="Kdb-J0-rbT" firstAttribute="top" secondItem="bKv-bo-Dx9" secondAttribute="bottom" constant="16" id="bvq-qJ-xG0"/>
+                <constraint firstItem="eTS-Ff-RRL" firstAttribute="top" secondItem="Kdb-J0-rbT" secondAttribute="bottom" constant="13" id="emX-zQ-CJ1"/>
+                <constraint firstAttribute="bottom" secondItem="15R-PN-gdO" secondAttribute="bottom" id="es7-0a-dS0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eTS-Ff-RRL" secondAttribute="trailing" id="kdG-BV-th7"/>
+                <constraint firstItem="Kdb-J0-rbT" firstAttribute="trailing" secondItem="bKv-bo-Dx9" secondAttribute="trailing" id="n37-mK-qz1"/>
+                <constraint firstItem="bKv-bo-Dx9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="9" id="qNa-4K-tqS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="216.03053435114504" y="94.718309859154928"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RoboBeautyLounge" width="375" height="1064"/>
+        <image name="createVlBot" width="33" height="33"/>
+        <image name="vivalipBackground" width="375" height="58"/>
+        <image name="vlBanner" width="357" height="104"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

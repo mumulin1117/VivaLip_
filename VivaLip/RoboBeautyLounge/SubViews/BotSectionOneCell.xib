@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" rowHeight="312" id="KGk-i7-Jjw" customClass="BotSectionOneCell" customModule="VivaLip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="312"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="447" height="312"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="LC0-RE-Y1l">
+                        <rect key="frame" x="12" y="0.0" width="423" height="312"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9S-pB-WVt">
+                                <rect key="frame" x="0.0" y="0.0" width="442" height="312"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlC-6T-5XB">
+                                        <rect key="frame" x="52" y="125" width="75" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" tag="10001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-Nb-14m">
+                                        <rect key="frame" x="0.0" y="0.0" width="216" height="312"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="flawless Bot"/>
+                                        <connections>
+                                            <action selector="botTouchSelect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HBx-Q3-uFf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C3-vK-gXe">
+                                        <rect key="frame" x="226" y="0.0" width="216" height="312"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="cosmoBot"/>
+                                        <connections>
+                                            <action selector="botTouchSelect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5LI-La-BRQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5C3-vK-gXe" firstAttribute="top" secondItem="X9S-pB-WVt" secondAttribute="top" id="2vt-lg-gMK"/>
+                                    <constraint firstAttribute="trailing" secondItem="5C3-vK-gXe" secondAttribute="trailing" id="ERC-uC-7Ba"/>
+                                    <constraint firstItem="uZ5-Nb-14m" firstAttribute="leading" secondItem="X9S-pB-WVt" secondAttribute="leading" id="Me9-Dm-Cbz"/>
+                                    <constraint firstItem="5C3-vK-gXe" firstAttribute="leading" secondItem="uZ5-Nb-14m" secondAttribute="trailing" constant="10" id="Xcg-qT-n35"/>
+                                    <constraint firstAttribute="bottom" secondItem="uZ5-Nb-14m" secondAttribute="bottom" id="YlI-6J-FZC"/>
+                                    <constraint firstAttribute="bottom" secondItem="5C3-vK-gXe" secondAttribute="bottom" id="dmK-uw-uZq"/>
+                                    <constraint firstItem="uZ5-Nb-14m" firstAttribute="top" secondItem="X9S-pB-WVt" secondAttribute="top" id="hg9-eD-EaD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="X9S-pB-WVt" secondAttribute="bottom" id="4C6-qN-N0T"/>
+                            <constraint firstAttribute="trailing" secondItem="X9S-pB-WVt" secondAttribute="trailing" id="JMd-d9-acu"/>
+                            <constraint firstItem="X9S-pB-WVt" firstAttribute="top" secondItem="LC0-RE-Y1l" secondAttribute="top" id="dh4-8V-jE6"/>
+                            <constraint firstItem="X9S-pB-WVt" firstAttribute="leading" secondItem="LC0-RE-Y1l" secondAttribute="leading" id="guh-em-whD"/>
+                            <constraint firstItem="X9S-pB-WVt" firstAttribute="height" secondItem="LC0-RE-Y1l" secondAttribute="height" id="moC-U9-dIA"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="LC0-RE-Y1l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Eai-s2-sdH"/>
+                    <constraint firstItem="LC0-RE-Y1l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HQ6-KO-zrW"/>
+                    <constraint firstAttribute="trailing" secondItem="LC0-RE-Y1l" secondAttribute="trailing" constant="12" id="JjR-HQ-Chs"/>
+                    <constraint firstAttribute="bottom" secondItem="LC0-RE-Y1l" secondAttribute="bottom" id="bRh-Is-trJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="-35.877862595419849" y="18.30985915492958"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cosmoBot" width="216" height="274"/>
+        <image name="flawless Bot" width="216" height="274"/>
+    </resources>
+</document>

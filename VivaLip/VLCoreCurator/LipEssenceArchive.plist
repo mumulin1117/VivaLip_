@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>lipGlossShade</key>
+		<string>GlamBot</string>
+		<key>beautyRoutineTip</key>
+		<string>Specializes in guiding users to create glamorous makeup looks and stay updated with fashion trends.</string>
+		<key>vivaIconStyle</key>
+		<string>SIlQIff2mB.png</string>
+		<key>glamourTrendID</key>
+		<string>SIlQIff2mB</string>
+		<key>lipstickMixerName</key>
+		<string>Skylar</string>
+		<key>shadeCreatorID</key>
+		<string>fNBNlo4oI6.jpg</string>
+		<key>glamCreatorNote</key>
+		<string>With the help of my trusty Makeup Bot, I mastered the art of smoky eyes today.</string>
+		<key>glamNoteAddTime</key>
+		<string>2024.12.28</string>
+		<key>vivaCaptureMoments</key>
+		<array>
+			<string>AhgvUM2QY11.jpg</string>
+			<string>AhgvUM2QY12.jpg</string>
+			<string>AhgvUM2QY13.jpg</string>
+		</array>
+	</dict>
+	<dict>
+		<key>lipGlossShade</key>
+		<string>CosmoBot</string>
+		<key>beautyRoutineTip</key>
+		<string>Helps users design unique makeup styles and provides tips on makeup product selection.</string>
+		<key>vivaIconStyle</key>
+		<string>Z8a1JNPFwt.png</string>
+		<key>glamourTrendID</key>
+		<string>Z8a1JNPFwt</string>
+		<key>lipstickMixerName</key>
+		<string>Hart</string>
+		<key>shadeCreatorID</key>
+		<string>c6MiT9xkU9.jpg</string>
+		<key>glamCreatorNote</key>
+		<string>The Makeup Bot suggested a perfect makeup look for my party tonight.</string>
+		<key>glamNoteAddTime</key>
+		<string>2024.12.23</string>
+		<key>vivaCaptureMoments</key>
+		<array>
+			<string>Hcl0R1kACM1.jpg</string>
+			<string>Hcl0R1kACM2.jpg</string>
+			<string>Hcl0R1kACM3.jpg</string>
+		</array>
+	</dict>
+	<dict>
+		<key>lipGlossShade</key>
+		<string>FaceFairy</string>
+		<key>beautyRoutineTip</key>
+		<string>Acts as a reliable friend in the journey of makeup, offering personalized beauty solutions.</string>
+		<key>vivaIconStyle</key>
+		<string>0WtYM1zYrL.png</string>
+		<key>glamourTrendID</key>
+		<string>0WtYM1zYrL</string>
+		<key>lipstickMixerName</key>
+		<string> Lake</string>
+		<key>shadeCreatorID</key>
+		<string>S5KuwyOYDE.jpg</string>
+		<key>lipCharmCounter</key>
+		<integer>0</integer>
+		<key>glamCreatorNote</key>
+		<string>Sharing my daily makeup routine enhanced by the Makeup Bot.</string>
+		<key>glamNoteAddTime</key>
+		<string>2024.12.20</string>
+		<key>vivaCaptureMoments</key>
+		<array>
+			<string>qoEDWxz9Cb1.jpg</string>
+			<string>qoEDWxz9Cb2.jpg</string>
+			<string>qoEDWxz9Cb3.jpg</string>
+		</array>
+	</dict>
+	<dict>
+		<key>lipGlossShade</key>
+		<string>StyleBot</string>
+		<key>beautyRoutineTip</key>
+		<string>Focuses on makeup styles, tailoring to diverse occasions.</string>
+		<key>vivaIconStyle</key>
+		<string>GIpMazdd5k.png</string>
+		<key>glamourTrendID</key>
+		<string>GIpMazdd5k</string>
+		<key>lipstickMixerName</key>
+		<string>Thorne</string>
+		<key>shadeCreatorID</key>
+		<string>Rx5dDBn5e4.jpg</string>
+		<key>glamCreatorNote</key>
+		<string>Thanks to the Makeup Bot, I nailed the retro makeup look.</string>
+		<key>glamNoteAddTime</key>
+		<string>2024.12.18</string>
+		<key>vivaCaptureMoments</key>
+		<array>
+			<string>EG1scaNlbv1.jpg</string>
+			<string>EG1scaNlbv2.jpg</string>
+			<string>EG1scaNlbv3.jpg</string>
+		</array>
+	</dict>
+	<dict>
+		<key>lipGlossShade</key>
+		<string>LookArt</string>
+		<key>beautyRoutineTip</key>
+		<string>A wizard-like bot proficient in various makeup techniques and trends.</string>
+		<key>vivaIconStyle</key>
+		<string>UPjWijmaja.png</string>
+		<key>glamourTrendID</key>
+		<string>UPjWijmaja</string>
+		<key>lipstickMixerName</key>
+		<string>Frost</string>
+		<key>shadeCreatorID</key>
+		<string>hywTIr1fHy.jpg</string>
+		<key>glamCreatorNote</key>
+		<string>My Makeup Bot customized a makeup plan for my beach vacation.</string>
+		<key>glamNoteAddTime</key>
+		<string>2024.12.15</string>
+		<key>vivaCaptureMoments</key>
+		<array>
+			<string>YvMolRkTPi1.jpg</string>
+			<string>YvMolRkTPi2.jpg</string>
+			<string>YvMolRkTPi3.jpg</string>
+		</array>
+	</dict>
+	<dict>
+		<key>lipGlossShade</key>
+		<string>Flawless</string>
+		<key>beautyRoutineTip</key>
+		<string>Introduces the latest makeup trends, inspiring new looks.</string>
+		<key>vivaIconStyle</key>
+		<string>AS9udaBmu0.png</string>
+		<key>glamourTrendID</key>
+		<string>AS9udaBmu0</string>
+		<key>lipstickMixerName</key>
+		<string>Calista</string>
+		<key>shadeCreatorID</key>
+		<string>0tcqXHf6Xg.jpg</string>
+		<key>glamCreatorNote</key>
+		<string>Tried a new makeup trend inspired by the Makeup Bot. It&apos;s edgy and I&apos;m loving it!</string>
+		<key>glamNoteAddTime</key>
+		<string>2024.12.08</string>
+		<key>vivaCaptureMoments</key>
+		<array>
+			<string>cexBcttYJo1.jpg</string>
+			<string>cexBcttYJo2.jpg</string>
+		</array>
+	</dict>
+</array>
+</plist>

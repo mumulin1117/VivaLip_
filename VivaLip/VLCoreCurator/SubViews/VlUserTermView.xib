@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="VlUserTermView" customModule="VivaLip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="517"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T91-h5-691">
+                    <rect key="frame" x="0.0" y="20" width="351" height="497"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQw-2y-FJA">
+                            <rect key="frame" x="15" y="426" width="188" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51" id="WLp-K3-g1v"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="I agree" backgroundImage="buttonVlBackground"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="agreeTerm:" destination="iN0-l3-epB" eventType="touchUpInside" id="DuY-fB-VF8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfd-JC-NkH">
+                            <rect key="frame" x="213" y="426" width="123" height="51"/>
+                            <color key="backgroundColor" red="1" green="0.76078431372549016" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.45490196078431372" green="0.047058823529411764" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelTrem:" destination="iN0-l3-epB" eventType="touchUpInside" id="yEO-mJ-UaG"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3Y-st-QN8">
+                            <rect key="frame" x="15" y="40" width="322" height="366"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="322" id="qVZ-DH-RHa"/>
+                                <constraint firstAttribute="height" constant="366" id="vaZ-hc-Pmf"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeL-TB-oLe">
+                            <rect key="frame" x="15" y="426" width="321" height="51"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="I know" backgroundImage="buttonVlBackground"/>
+                            <connections>
+                                <action selector="vliKonwInSide:" destination="iN0-l3-epB" eventType="touchUpInside" id="koO-bQ-MIU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30980392156862746" green="0.047058823529411764" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="h3Y-st-QN8" firstAttribute="leading" secondItem="T91-h5-691" secondAttribute="leading" constant="15" id="7xr-N8-zXs"/>
+                        <constraint firstAttribute="trailing" secondItem="h3Y-st-QN8" secondAttribute="trailing" constant="14" id="9pY-zF-gIm"/>
+                        <constraint firstItem="vfd-JC-NkH" firstAttribute="height" secondItem="zQw-2y-FJA" secondAttribute="height" id="FpH-Bm-bGd"/>
+                        <constraint firstItem="h3Y-st-QN8" firstAttribute="top" secondItem="T91-h5-691" secondAttribute="top" constant="40" id="JKr-l9-ktZ"/>
+                        <constraint firstItem="zQw-2y-FJA" firstAttribute="top" secondItem="h3Y-st-QN8" secondAttribute="bottom" constant="20" id="NdO-mZ-B71"/>
+                        <constraint firstItem="vfd-JC-NkH" firstAttribute="leading" secondItem="zQw-2y-FJA" secondAttribute="trailing" constant="10" id="Yle-wO-Zkr"/>
+                        <constraint firstItem="IeL-TB-oLe" firstAttribute="top" secondItem="zQw-2y-FJA" secondAttribute="top" id="cbW-Um-9RL"/>
+                        <constraint firstItem="IeL-TB-oLe" firstAttribute="bottom" secondItem="vfd-JC-NkH" secondAttribute="bottom" id="clK-7v-Mhw"/>
+                        <constraint firstAttribute="trailing" secondItem="vfd-JC-NkH" secondAttribute="trailing" constant="15" id="dLm-bd-prn"/>
+                        <constraint firstItem="zQw-2y-FJA" firstAttribute="width" secondItem="vfd-JC-NkH" secondAttribute="width" multiplier="188/123" id="gIe-9Z-uvd"/>
+                        <constraint firstItem="vfd-JC-NkH" firstAttribute="bottom" secondItem="zQw-2y-FJA" secondAttribute="bottom" id="s5Y-w2-99V"/>
+                        <constraint firstAttribute="bottom" secondItem="zQw-2y-FJA" secondAttribute="bottom" constant="20" id="t0N-rw-CpV"/>
+                        <constraint firstItem="zQw-2y-FJA" firstAttribute="leading" secondItem="T91-h5-691" secondAttribute="leading" constant="15" id="udJ-Ej-gEb"/>
+                        <constraint firstItem="IeL-TB-oLe" firstAttribute="trailing" secondItem="vfd-JC-NkH" secondAttribute="trailing" id="vI5-BK-3e7"/>
+                        <constraint firstItem="IeL-TB-oLe" firstAttribute="leading" secondItem="zQw-2y-FJA" secondAttribute="leading" id="y7v-UD-r2t"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dD-c9-U3f">
+                    <rect key="frame" x="143" y="0.0" width="65" height="40"/>
+                    <color key="backgroundColor" red="0.80392156859999997" green="0.14901960780000001" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Bsr-Mb-4Vd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="    EULA    ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="T91-h5-691" secondAttribute="trailing" id="54w-rB-esJ"/>
+                <constraint firstItem="2dD-c9-U3f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="I0h-kA-oy4"/>
+                <constraint firstAttribute="bottom" secondItem="T91-h5-691" secondAttribute="bottom" id="IFe-Gs-Erq"/>
+                <constraint firstItem="T91-h5-691" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JzD-rn-uD2"/>
+                <constraint firstItem="2dD-c9-U3f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xec-GT-hmA"/>
+                <constraint firstItem="T91-h5-691" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="y0U-rb-iQd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="TermVlTextView" destination="h3Y-st-QN8" id="X4N-is-HmR"/>
+                <outlet property="titleVlView" destination="2dD-c9-U3f" id="Ddi-Uz-kpB"/>
+                <outlet property="vlContentTerm" destination="T91-h5-691" id="TJv-2h-z4D"/>
+                <outlet property="vlIkonwButton" destination="IeL-TB-oLe" id="425-cU-maP"/>
+            </connections>
+            <point key="canvasLocation" x="139.69465648854961" y="20.774647887323944"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buttonVlBackground" width="188" height="51"/>
+    </resources>
+</document>

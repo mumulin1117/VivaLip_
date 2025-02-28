@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RadianceHubController" customModule="VivaLip" customModuleProvider="target">
+            <connections>
+                <outlet property="radianceHubTableList" destination="zuX-ZE-6Q0" id="Ppu-la-pH7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vlMenuSuper" destination="gro-Vg-zYz" id="zff-nK-TZ0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoboBeautyLounge" translatesAutoresizingMaskIntoConstraints="NO" id="7mE-tK-tXT">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radianceHudBackgrouond" translatesAutoresizingMaskIntoConstraints="NO" id="DQ5-OS-g6v">
+                    <rect key="frame" x="0.0" y="50" width="393" height="58"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3r-4D-mgG">
+                    <rect key="frame" x="345" y="62.666666666666657" width="33" height="33"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="createVlBot"/>
+                    <connections>
+                        <action selector="postBeautyCreationToRadianceHub" destination="-1" eventType="touchUpInside" id="Djw-HC-VQR"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gro-Vg-zYz">
+                    <rect key="frame" x="11" y="127" width="371" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="3CE-qS-dAS"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2x-zX-a9b">
+                    <rect key="frame" x="269" y="127" width="124" height="50"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="radianHubChat"/>
+                    <connections>
+                        <action selector="gotoVlMessageList:" destination="-1" eventType="touchUpInside" id="ed9-rO-4ta"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zuX-ZE-6Q0">
+                    <rect key="frame" x="0.0" y="177" width="393" height="675"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gRB-aR-6Yb"/>
+                        <outlet property="delegate" destination="-1" id="Toz-8z-qMI"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7mE-tK-tXT" secondAttribute="bottom" id="4S6-AL-CcV"/>
+                <constraint firstItem="zuX-ZE-6Q0" firstAttribute="top" secondItem="W2x-zX-a9b" secondAttribute="bottom" id="5XV-FI-lEt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zuX-ZE-6Q0" secondAttribute="trailing" id="96L-Rb-K1p"/>
+                <constraint firstItem="7mE-tK-tXT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dcj-OQ-jKs"/>
+                <constraint firstItem="W2x-zX-a9b" firstAttribute="top" secondItem="gro-Vg-zYz" secondAttribute="top" id="F8R-hW-dNA"/>
+                <constraint firstItem="gro-Vg-zYz" firstAttribute="top" secondItem="DQ5-OS-g6v" secondAttribute="bottom" constant="19" id="KLg-YW-cKB"/>
+                <constraint firstItem="y3r-4D-mgG" firstAttribute="centerY" secondItem="DQ5-OS-g6v" secondAttribute="centerY" id="Ttf-Sl-Jgv"/>
+                <constraint firstItem="zuX-ZE-6Q0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Xbe-Lm-0c5"/>
+                <constraint firstItem="DQ5-OS-g6v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="bl6-90-r01"/>
+                <constraint firstItem="gro-Vg-zYz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="11" id="c8X-f2-AU8"/>
+                <constraint firstItem="DQ5-OS-g6v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cya-IU-01I"/>
+                <constraint firstAttribute="bottom" secondItem="zuX-ZE-6Q0" secondAttribute="bottom" id="hBQ-5y-iVn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DQ5-OS-g6v" secondAttribute="trailing" id="hb0-E5-48a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="W2x-zX-a9b" secondAttribute="trailing" id="iym-cU-ppz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y3r-4D-mgG" secondAttribute="trailing" constant="15" id="jVk-e8-vfO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7mE-tK-tXT" secondAttribute="trailing" id="n0U-SC-mdu"/>
+                <constraint firstItem="7mE-tK-tXT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rsJ-LZ-JSb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gro-Vg-zYz" secondAttribute="trailing" constant="11" id="yA7-0o-gj7"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RoboBeautyLounge" width="375" height="1064"/>
+        <image name="createVlBot" width="33" height="33"/>
+        <image name="radianHubChat" width="124" height="50"/>
+        <image name="radianceHudBackgrouond" width="375" height="58"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

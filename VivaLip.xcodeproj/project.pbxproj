@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04191CB02D23E50D0060D934 /* VlMessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04191CAE2D23E50D0060D934 /* VlMessageListViewController.swift */; };
+		04191CB12D23E50D0060D934 /* VlMessageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04191CAF2D23E50D0060D934 /* VlMessageListViewController.xib */; };
+		04191CB42D23E5940060D934 /* VlMessageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04191CB22D23E5940060D934 /* VlMessageListTableViewCell.swift */; };
+		04191CB52D23E5940060D934 /* VlMessageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04191CB32D23E5940060D934 /* VlMessageListTableViewCell.xib */; };
+		04191CB82D23E7780060D934 /* ChitBotsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04191CB62D23E7780060D934 /* ChitBotsCollectionViewCell.swift */; };
+		04191CB92D23E7780060D934 /* ChitBotsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04191CB72D23E7780060D934 /* ChitBotsCollectionViewCell.xib */; };
+		04191CBD2D23F3D80060D934 /* LipLoreCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04191CBB2D23F3D80060D934 /* LipLoreCollectionReusableView.swift */; };
+		04191CBE2D23F3D90060D934 /* LipLoreCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04191CBC2D23F3D80060D934 /* LipLoreCollectionReusableView.xib */; };
+		042F803A2D2BA71A0070ABC1 /* ChitInfoStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F80392D2BA71A0070ABC1 /* ChitInfoStruct.swift */; };
+		0432BC2C2D23F94C00AFAC82 /* LipLorePostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0432BC2B2D23F94C00AFAC82 /* LipLorePostCollectionViewCell.xib */; };
+		0432BC2D2D23F94C00AFAC82 /* LipLorePostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BC2A2D23F94C00AFAC82 /* LipLorePostCollectionViewCell.swift */; };
+		0432BC302D23F98100AFAC82 /* LipLoreRobotCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0432BC2F2D23F98100AFAC82 /* LipLoreRobotCollectionViewCell.xib */; };
+		0432BC312D23F98100AFAC82 /* LipLoreRobotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432BC2E2D23F98100AFAC82 /* LipLoreRobotCollectionViewCell.swift */; };
+		045BAE252D23BA9B00EDA86F /* RoboChitChatMeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BAE232D23BA9B00EDA86F /* RoboChitChatMeTableViewCell.swift */; };
+		045BAE262D23BA9B00EDA86F /* RoboChitChatMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045BAE242D23BA9B00EDA86F /* RoboChitChatMeTableViewCell.xib */; };
+		045BAE292D23BC9400EDA86F /* RoboChitChatOtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BAE272D23BC9400EDA86F /* RoboChitChatOtherTableViewCell.swift */; };
+		045BAE2A2D23BC9400EDA86F /* RoboChitChatOtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045BAE282D23BC9400EDA86F /* RoboChitChatOtherTableViewCell.xib */; };
+		045BAE2D2D23BE6B00EDA86F /* BlushBloomForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BAE2B2D23BE6B00EDA86F /* BlushBloomForumTableViewCell.swift */; };
+		045BAE2E2D23BE6B00EDA86F /* BlushBloomForumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045BAE2C2D23BE6B00EDA86F /* BlushBloomForumTableViewCell.xib */; };
+		045BAE312D23C10100EDA86F /* BlushBloomForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BAE2F2D23C10100EDA86F /* BlushBloomForumViewController.swift */; };
+		045BAE322D23C10100EDA86F /* BlushBloomForumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045BAE302D23C10100EDA86F /* BlushBloomForumViewController.xib */; };
+		047D497A2D1E9F4400309569 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D49702D1E9F4400309569 /* AppDelegate.swift */; };
+		047D497B2D1E9F4400309569 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D49772D1E9F4400309569 /* SceneDelegate.swift */; };
+		047D497D2D1E9F4400309569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047D49712D1E9F4400309569 /* Assets.xcassets */; };
+		047D497F2D1E9F4400309569 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047D49742D1E9F4400309569 /* LaunchScreen.storyboard */; };
+		047D49802D1E9F4400309569 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047D49762D1E9F4400309569 /* Main.storyboard */; };
+		047D498A2D1EA8AC00309569 /* VLCoreCurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D49892D1EA8AC00309569 /* VLCoreCurator.swift */; };
+		047D498C2D1EA97200309569 /* NavigationBarConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D498B2D1EA97200309569 /* NavigationBarConfigurable.swift */; };
+		047D49912D1EAE3E00309569 /* LoginCurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D498F2D1EAE3E00309569 /* LoginCurator.swift */; };
+		047D49922D1EAE3E00309569 /* LoginCurator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047D49902D1EAE3E00309569 /* LoginCurator.xib */; };
+		0494474B2D2685220034BB37 /* LipEssenceArchive.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0494474A2D2685220034BB37 /* LipEssenceArchive.plist */; };
+		0494474F2D2686D80034BB37 /* LipEssenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494474E2D2686D80034BB37 /* LipEssenceModel.swift */; };
+		049518912D223E1700CDF80B /* VlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049518902D223E1700CDF80B /* VlManager.swift */; };
+		049518932D22682F00CDF80B /* MBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049518922D22682F00CDF80B /* MBProgressHUD.swift */; };
+		049518962D226A5300CDF80B /* VlUserTermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049518952D226A5300CDF80B /* VlUserTermView.swift */; };
+		049518982D226A9300CDF80B /* VlUserTermView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049518972D226A9300CDF80B /* VlUserTermView.xib */; };
+		0498CC7A2D22A2EC00A656E1 /* RoboChitChatCurator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0498CC792D22A2EC00A656E1 /* RoboChitChatCurator.xib */; };
+		0498CC7B2D22A2EC00A656E1 /* RoboChitChatCurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498CC782D22A2EC00A656E1 /* RoboChitChatCurator.swift */; };
+		0499F3692D55AB1300867720 /* MakeupJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499F3672D55AB1300867720 /* MakeupJourneyViewController.swift */; };
+		0499F36A2D55AB1300867720 /* MakeupJourneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0499F3682D55AB1300867720 /* MakeupJourneyViewController.xib */; };
+		0499F36C2D55B33400867720 /* VivalipTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499F36B2D55B33400867720 /* VivalipTools.swift */; };
+		0499F36F2D55BA9700867720 /* TrendNavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499F36D2D55BA9700867720 /* TrendNavigatorViewController.swift */; };
+		0499F3702D55BA9700867720 /* TrendNavigatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0499F36E2D55BA9700867720 /* TrendNavigatorViewController.xib */; };
+		0499F3732D55D69C00867720 /* CosmeticInteractionTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499F3712D55D69C00867720 /* CosmeticInteractionTermsViewController.swift */; };
+		0499F3742D55D69C00867720 /* CosmeticInteractionTermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0499F3722D55D69C00867720 /* CosmeticInteractionTermsViewController.xib */; };
+		049BB9ED2D262FF3003D0FF7 /* VivaLipSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BB9EB2D262FF3003D0FF7 /* VivaLipSettingViewController.swift */; };
+		049BB9EE2D262FF3003D0FF7 /* VivaLipSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049BB9EC2D262FF3003D0FF7 /* VivaLipSettingViewController.xib */; };
+		049BB9F12D263550003D0FF7 /* VlInsightLensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BB9EF2D263550003D0FF7 /* VlInsightLensViewController.swift */; };
+		049BB9F22D263550003D0FF7 /* VlInsightLensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049BB9F02D263550003D0FF7 /* VlInsightLensViewController.xib */; };
+		049BB9F52D263945003D0FF7 /* VlResponsePortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BB9F32D263945003D0FF7 /* VlResponsePortalViewController.swift */; };
+		049BB9F62D263945003D0FF7 /* VlResponsePortalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049BB9F42D263945003D0FF7 /* VlResponsePortalViewController.xib */; };
+		049BB9F92D263AB3003D0FF7 /* VlRestrictedZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BB9F72D263AB3003D0FF7 /* VlRestrictedZoneViewController.swift */; };
+		049BB9FA2D263AB3003D0FF7 /* VlRestrictedZoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049BB9F82D263AB3003D0FF7 /* VlRestrictedZoneViewController.xib */; };
+		049BB9FD2D263B3F003D0FF7 /* VlCharmUnitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BB9FB2D263B3F003D0FF7 /* VlCharmUnitsViewController.swift */; };
+		049BB9FE2D263B3F003D0FF7 /* VlCharmUnitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049BB9FC2D263B3F003D0FF7 /* VlCharmUnitsViewController.xib */; };
+		049BBA012D263C22003D0FF7 /* VlCharmUnitsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BB9FF2D263C22003D0FF7 /* VlCharmUnitsCollectionViewCell.swift */; };
+		049BBA022D263C22003D0FF7 /* VlCharmUnitsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049BBA002D263C22003D0FF7 /* VlCharmUnitsCollectionViewCell.xib */; };
+		049BBA052D263E2B003D0FF7 /* VlBeautyConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BBA032D263E2B003D0FF7 /* VlBeautyConnectViewController.swift */; };
+		049BBA062D263E2B003D0FF7 /* VlBeautyConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049BBA042D263E2B003D0FF7 /* VlBeautyConnectViewController.xib */; };
+		049D721F2D23C9140083E3C4 /* RadianceHubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D721D2D23C9140083E3C4 /* RadianceHubTableViewCell.swift */; };
+		049D72202D23C9140083E3C4 /* RadianceHubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D721E2D23C9140083E3C4 /* RadianceHubTableViewCell.xib */; };
+		049D72232D23CFF80083E3C4 /* PostBeautyCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D72212D23CFF80083E3C4 /* PostBeautyCreationViewController.swift */; };
+		049D72242D23CFF80083E3C4 /* PostBeautyCreationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D72222D23CFF80083E3C4 /* PostBeautyCreationViewController.xib */; };
+		049D72272D23D8CE0083E3C4 /* RadianCeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D72252D23D8CE0083E3C4 /* RadianCeDetailViewController.swift */; };
+		049D72282D23D8CE0083E3C4 /* RadianCeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D72262D23D8CE0083E3C4 /* RadianCeDetailViewController.xib */; };
+		04A99BE12D22790B00EC6D0C /* VlTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A99BE02D22790B00EC6D0C /* VlTabbarController.swift */; };
+		04A99BE42D2279CC00EC6D0C /* RoboBeautyLoungeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A99BE32D2279CC00EC6D0C /* RoboBeautyLoungeController.xib */; };
+		04A99BE52D2279CC00EC6D0C /* RoboBeautyLoungeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A99BE22D2279CC00EC6D0C /* RoboBeautyLoungeController.swift */; };
+		04A99BE82D2279E200EC6D0C /* RadianceHubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A99BE62D2279E200EC6D0C /* RadianceHubController.swift */; };
+		04A99BE92D2279E200EC6D0C /* RadianceHubController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A99BE72D2279E200EC6D0C /* RadianceHubController.xib */; };
+		04A99BEC2D2279F200EC6D0C /* LipLoreZoneController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A99BEB2D2279F200EC6D0C /* LipLoreZoneController.xib */; };
+		04A99BED2D2279F200EC6D0C /* LipLoreZoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A99BEA2D2279F200EC6D0C /* LipLoreZoneController.swift */; };
+		04A99BF12D22843E00EC6D0C /* BotSectionOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A99BF02D22843E00EC6D0C /* BotSectionOneCell.xib */; };
+		04A99BF22D22843E00EC6D0C /* BotSectionOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A99BEF2D22843E00EC6D0C /* BotSectionOneCell.swift */; };
+		04B4522B2D291C740014139F /* VlReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4522A2D291C740014139F /* VlReportView.swift */; };
+		04B4522D2D291C7B0014139F /* VlReportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B4522C2D291C7B0014139F /* VlReportView.xib */; };
+		04BBCE892D27EB88001B5084 /* RadianceDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBCE872D27EB88001B5084 /* RadianceDetailCollectionViewCell.swift */; };
+		04D6B3312D22863400423DBE /* ReboBeartyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D6B3302D22863400423DBE /* ReboBeartyTableViewCell.xib */; };
+		04D6B3322D22863400423DBE /* ReboBeartyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D6B32F2D22863400423DBE /* ReboBeartyTableViewCell.swift */; };
+		04D6B3382D228B9300423DBE /* VlMenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D6B3372D228B9300423DBE /* VlMenuCollectionView.swift */; };
+		04D6B33B2D22923200423DBE /* GlamBotWorkshopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D6B33A2D22923200423DBE /* GlamBotWorkshopController.xib */; };
+		04D6B33C2D22923200423DBE /* GlamBotWorkshopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D6B3392D22923200423DBE /* GlamBotWorkshopController.swift */; };
+		AF54B89B8C9454DD595DF506 /* Pods_VivaLip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1033C8714B90BA3CF452BD /* Pods_VivaLip.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04191CAE2D23E50D0060D934 /* VlMessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlMessageListViewController.swift; sourceTree = "<group>"; };
+		04191CAF2D23E50D0060D934 /* VlMessageListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VlMessageListViewController.xib; sourceTree = "<group>"; };
+		04191CB22D23E5940060D934 /* VlMessageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlMessageListTableViewCell.swift; sourceTree = "<group>"; };
+		04191CB32D23E5940060D934 /* VlMessageListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VlMessageListTableViewCell.xib; sourceTree = "<group>"; };
+		04191CB62D23E7780060D934 /* ChitBotsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChitBotsCollectionViewCell.swift; sourceTree = "<group>"; };
+		04191CB72D23E7780060D934 /* ChitBotsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChitBotsCollectionViewCell.xib; sourceTree = "<group>"; };
+		04191CBB2D23F3D80060D934 /* LipLoreCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipLoreCollectionReusableView.swift; sourceTree = "<group>"; };
+		04191CBC2D23F3D80060D934 /* LipLoreCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LipLoreCollectionReusableView.xib; sourceTree = "<group>"; };
+		042F80392D2BA71A0070ABC1 /* ChitInfoStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChitInfoStruct.swift; sourceTree = "<group>"; };
+		0432BC2A2D23F94C00AFAC82 /* LipLorePostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipLorePostCollectionViewCell.swift; sourceTree = "<group>"; };
+		0432BC2B2D23F94C00AFAC82 /* LipLorePostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LipLorePostCollectionViewCell.xib; sourceTree = "<group>"; };
+		0432BC2E2D23F98100AFAC82 /* LipLoreRobotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipLoreRobotCollectionViewCell.swift; sourceTree = "<group>"; };
+		0432BC2F2D23F98100AFAC82 /* LipLoreRobotCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LipLoreRobotCollectionViewCell.xib; sourceTree = "<group>"; };
+		045BAE232D23BA9B00EDA86F /* RoboChitChatMeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboChitChatMeTableViewCell.swift; sourceTree = "<group>"; };
+		045BAE242D23BA9B00EDA86F /* RoboChitChatMeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoboChitChatMeTableViewCell.xib; sourceTree = "<group>"; };
+		045BAE272D23BC9400EDA86F /* RoboChitChatOtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboChitChatOtherTableViewCell.swift; sourceTree = "<group>"; };
+		045BAE282D23BC9400EDA86F /* RoboChitChatOtherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoboChitChatOtherTableViewCell.xib; sourceTree = "<group>"; };
+		045BAE2B2D23BE6B00EDA86F /* BlushBloomForumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlushBloomForumTableViewCell.swift; sourceTree = "<group>"; };
+		045BAE2C2D23BE6B00EDA86F /* BlushBloomForumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlushBloomForumTableViewCell.xib; sourceTree = "<group>"; };
+		045BAE2F2D23C10100EDA86F /* BlushBloomForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlushBloomForumViewController.swift; sourceTree = "<group>"; };
+		045BAE302D23C10100EDA86F /* BlushBloomForumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlushBloomForumViewController.xib; sourceTree = "<group>"; };
+		047D49582D1E9E4800309569 /* VivaLip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivaLip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047D49702D1E9F4400309569 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		047D49712D1E9F4400309569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		047D49722D1E9F4400309569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047D49732D1E9F4400309569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		047D49752D1E9F4400309569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		047D49772D1E9F4400309569 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		047D49892D1EA8AC00309569 /* VLCoreCurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLCoreCurator.swift; sourceTree = "<group>"; };
+		047D498B2D1EA97200309569 /* NavigationBarConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarConfigurable.swift; sourceTree = "<group>"; };
+		047D498F2D1EAE3E00309569 /* LoginCurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCurator.swift; sourceTree = "<group>"; };
+		047D49902D1EAE3E00309569 /* LoginCurator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginCurator.xib; sourceTree = "<group>"; };
+		0494474A2D2685220034BB37 /* LipEssenceArchive.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LipEssenceArchive.plist; sourceTree = "<group>"; };
+		0494474E2D2686D80034BB37 /* LipEssenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipEssenceModel.swift; sourceTree = "<group>"; };
+		049518902D223E1700CDF80B /* VlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlManager.swift; sourceTree = "<group>"; };
+		049518922D22682F00CDF80B /* MBProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressHUD.swift; sourceTree = "<group>"; };
+		049518952D226A5300CDF80B /* VlUserTermView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlUserTermView.swift; sourceTree = "<group>"; };
+		049518972D226A9300CDF80B /* VlUserTermView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VlUserTermView.xib; sourceTree = "<group>"; };
+		0498CC782D22A2EC00A656E1 /* RoboChitChatCurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboChitChatCurator.swift; sourceTree = "<group>"; };
+		0498CC792D22A2EC00A656E1 /* RoboChitChatCurator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoboChitChatCurator.xib; sourceTree = "<group>"; };
+		0499F3672D55AB1300867720 /* MakeupJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeupJourneyViewController.swift; sourceTree = "<group>"; };
+		0499F3682D55AB1300867720 /* MakeupJourneyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeupJourneyViewController.xib; sourceTree = "<group>"; };
+		0499F36B2D55B33400867720 /* VivalipTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivalipTools.swift; sourceTree = "<group>"; };
+		0499F36D2D55BA9700867720 /* TrendNavigatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendNavigatorViewController.swift; sourceTree = "<group>"; };
+		0499F36E2D55BA9700867720 /* TrendNavigatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendNavigatorViewController.xib; sourceTree = "<group>"; };
+		0499F3712D55D69C00867720 /* CosmeticInteractionTermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticInteractionTermsViewController.swift; sourceTree = "<group>"; };
+		0499F3722D55D69C00867720 /* CosmeticInteractionTermsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CosmeticInteractionTermsViewController.xib; sourceTree = "<group>"; };
+		0499F3752D5612A100867720 /* VivaLip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VivaLip.entitlements; sourceTree = "<group>"; };
+		049BB9EB2D262FF3003D0FF7 /* VivaLipSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivaLipSettingViewController.swift; sourceTree = "<group>"; };
+		049BB9EC2D262FF3003D0FF7 /* VivaLipSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VivaLipSettingViewController.xib; sourceTree = "<group>"; };
+		049BB9EF2D263550003D0FF7 /* VlInsightLensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlInsightLensViewController.swift; sourceTree = "<group>"; };
+		049BB9F02D263550003D0FF7 /* VlInsightLensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VlInsightLensViewController.xib; sourceTree = "<group>"; };
+		049BB9F32D263945003D0FF7 /* VlResponsePortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlResponsePortalViewController.swift; sourceTree = "<group>"; };
+		049BB9F42D263945003D0FF7 /* VlResponsePortalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VlResponsePortalViewController.xib; sourceTree = "<group>"; };
+		049BB9F72D263AB3003D0FF7 /* VlRestrictedZoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlRestrictedZoneViewController.swift; sourceTree = "<group>"; };
+		049BB9F82D263AB3003D0FF7 /* VlRestrictedZoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VlRestrictedZoneViewController.xib; sourceTree = "<group>"; };
+		049BB9FB2D263B3F003D0FF7 /* VlCharmUnitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlCharmUnitsViewController.swift; sourceTree = "<group>"; };
+		049BB9FC2D263B3F003D0FF7 /* VlCharmUnitsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VlCharmUnitsViewController.xib; sourceTree = "<group>"; };
+		049BB9FF2D263C22003D0FF7 /* VlCharmUnitsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlCharmUnitsCollectionViewCell.swift; sourceTree = "<group>"; };
+		049BBA002D263C22003D0FF7 /* VlCharmUnitsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VlCharmUnitsCollectionViewCell.xib; sourceTree = "<group>"; };
+		049BBA032D263E2B003D0FF7 /* VlBeautyConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlBeautyConnectViewController.swift; sourceTree = "<group>"; };
+		049BBA042D263E2B003D0FF7 /* VlBeautyConnectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VlBeautyConnectViewController.xib; sourceTree = "<group>"; };
+		049D721D2D23C9140083E3C4 /* RadianceHubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadianceHubTableViewCell.swift; sourceTree = "<group>"; };
+		049D721E2D23C9140083E3C4 /* RadianceHubTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadianceHubTableViewCell.xib; sourceTree = "<group>"; };
+		049D72212D23CFF80083E3C4 /* PostBeautyCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBeautyCreationViewController.swift; sourceTree = "<group>"; };
+		049D72222D23CFF80083E3C4 /* PostBeautyCreationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostBeautyCreationViewController.xib; sourceTree = "<group>"; };
+		049D72252D23D8CE0083E3C4 /* RadianCeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadianCeDetailViewController.swift; sourceTree = "<group>"; };
+		049D72262D23D8CE0083E3C4 /* RadianCeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadianCeDetailViewController.xib; sourceTree = "<group>"; };
+		04A99BE02D22790B00EC6D0C /* VlTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlTabbarController.swift; sourceTree = "<group>"; };
+		04A99BE22D2279CC00EC6D0C /* RoboBeautyLoungeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboBeautyLoungeController.swift; sourceTree = "<group>"; };
+		04A99BE32D2279CC00EC6D0C /* RoboBeautyLoungeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoboBeautyLoungeController.xib; sourceTree = "<group>"; };
+		04A99BE62D2279E200EC6D0C /* RadianceHubController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadianceHubController.swift; sourceTree = "<group>"; };
+		04A99BE72D2279E200EC6D0C /* RadianceHubController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadianceHubController.xib; sourceTree = "<group>"; };
+		04A99BEA2D2279F200EC6D0C /* LipLoreZoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipLoreZoneController.swift; sourceTree = "<group>"; };
+		04A99BEB2D2279F200EC6D0C /* LipLoreZoneController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LipLoreZoneController.xib; sourceTree = "<group>"; };
+		04A99BEF2D22843E00EC6D0C /* BotSectionOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotSectionOneCell.swift; sourceTree = "<group>"; };
+		04A99BF02D22843E00EC6D0C /* BotSectionOneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BotSectionOneCell.xib; sourceTree = "<group>"; };
+		04B4522A2D291C740014139F /* VlReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlReportView.swift; sourceTree = "<group>"; };
+		04B4522C2D291C7B0014139F /* VlReportView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VlReportView.xib; sourceTree = "<group>"; };
+		04BBCE872D27EB88001B5084 /* RadianceDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadianceDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		04D6B32F2D22863400423DBE /* ReboBeartyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReboBeartyTableViewCell.swift; sourceTree = "<group>"; };
+		04D6B3302D22863400423DBE /* ReboBeartyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReboBeartyTableViewCell.xib; sourceTree = "<group>"; };
+		04D6B3372D228B9300423DBE /* VlMenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlMenuCollectionView.swift; sourceTree = "<group>"; };
+		04D6B3392D22923200423DBE /* GlamBotWorkshopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlamBotWorkshopController.swift; sourceTree = "<group>"; };
+		04D6B33A2D22923200423DBE /* GlamBotWorkshopController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlamBotWorkshopController.xib; sourceTree = "<group>"; };
+		2D1033C8714B90BA3CF452BD /* Pods_VivaLip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VivaLip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C935EA0260D806D72320725 /* Pods-VivaLip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaLip.release.xcconfig"; path = "Target Support Files/Pods-VivaLip/Pods-VivaLip.release.xcconfig"; sourceTree = "<group>"; };
+		88DC4113EEBA0432D7AFBE28 /* Pods-VivaLip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaLip.debug.xcconfig"; path = "Target Support Files/Pods-VivaLip/Pods-VivaLip.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047D49552D1E9E4800309569 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF54B89B8C9454DD595DF506 /* Pods_VivaLip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04191CBA2D23F3BC0060D934 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				04191CBB2D23F3D80060D934 /* LipLoreCollectionReusableView.swift */,
+				04191CBC2D23F3D80060D934 /* LipLoreCollectionReusableView.xib */,
+				0432BC2A2D23F94C00AFAC82 /* LipLorePostCollectionViewCell.swift */,
+				0432BC2B2D23F94C00AFAC82 /* LipLorePostCollectionViewCell.xib */,
+				0432BC2E2D23F98100AFAC82 /* LipLoreRobotCollectionViewCell.swift */,
+				0432BC2F2D23F98100AFAC82 /* LipLoreRobotCollectionViewCell.xib */,
+				049BB9FF2D263C22003D0FF7 /* VlCharmUnitsCollectionViewCell.swift */,
+				049BBA002D263C22003D0FF7 /* VlCharmUnitsCollectionViewCell.xib */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		047D494F2D1E9E4800309569 = {
+			isa = PBXGroup;
+			children = (
+				047D49792D1E9F4400309569 /* VivaLip */,
+				047D49592D1E9E4800309569 /* Products */,
+				5CA336CF01F064F202238629 /* Pods */,
+				7CD26E657A4710C0C87A02A5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		047D49592D1E9E4800309569 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047D49582D1E9E4800309569 /* VivaLip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		047D49792D1E9F4400309569 /* VivaLip */ = {
+			isa = PBXGroup;
+			children = (
+				0499F3752D5612A100867720 /* VivaLip.entitlements */,
+				047D49882D1EA85700309569 /* VLCoreCurator */,
+				047D49872D1EA79D00309569 /* LipLoreZone */,
+				047D49822D1EA75900309569 /* RadianceHub */,
+				047D49812D1EA75300309569 /* RoboBeautyLounge */,
+				047D49702D1E9F4400309569 /* AppDelegate.swift */,
+				047D49772D1E9F4400309569 /* SceneDelegate.swift */,
+				047D49712D1E9F4400309569 /* Assets.xcassets */,
+				047D49722D1E9F4400309569 /* Info.plist */,
+				047D49742D1E9F4400309569 /* LaunchScreen.storyboard */,
+				047D49762D1E9F4400309569 /* Main.storyboard */,
+				049518902D223E1700CDF80B /* VlManager.swift */,
+				0499F36B2D55B33400867720 /* VivalipTools.swift */,
+				0494474E2D2686D80034BB37 /* LipEssenceModel.swift */,
+				049518922D22682F00CDF80B /* MBProgressHUD.swift */,
+			);
+			path = VivaLip;
+			sourceTree = "<group>";
+		};
+		047D49812D1EA75300309569 /* RoboBeautyLounge */ = {
+			isa = PBXGroup;
+			children = (
+				04A99BEE2D22841A00EC6D0C /* SubViews */,
+				0498CC752D22A2BE00A656E1 /* RoboChitChat */,
+				04A99BE22D2279CC00EC6D0C /* RoboBeautyLoungeController.swift */,
+				04A99BE32D2279CC00EC6D0C /* RoboBeautyLoungeController.xib */,
+				04D6B3392D22923200423DBE /* GlamBotWorkshopController.swift */,
+				04D6B33A2D22923200423DBE /* GlamBotWorkshopController.xib */,
+			);
+			path = RoboBeautyLounge;
+			sourceTree = "<group>";
+		};
+		047D49822D1EA75900309569 /* RadianceHub */ = {
+			isa = PBXGroup;
+			children = (
+				049D721C2D23C9000083E3C4 /* SubViews */,
+				04A99BE62D2279E200EC6D0C /* RadianceHubController.swift */,
+				04A99BE72D2279E200EC6D0C /* RadianceHubController.xib */,
+				049D72252D23D8CE0083E3C4 /* RadianCeDetailViewController.swift */,
+				049D72262D23D8CE0083E3C4 /* RadianCeDetailViewController.xib */,
+				049D72212D23CFF80083E3C4 /* PostBeautyCreationViewController.swift */,
+				049D72222D23CFF80083E3C4 /* PostBeautyCreationViewController.xib */,
+				04191CAE2D23E50D0060D934 /* VlMessageListViewController.swift */,
+				04191CAF2D23E50D0060D934 /* VlMessageListViewController.xib */,
+			);
+			path = RadianceHub;
+			sourceTree = "<group>";
+		};
+		047D49872D1EA79D00309569 /* LipLoreZone */ = {
+			isa = PBXGroup;
+			children = (
+				04191CBA2D23F3BC0060D934 /* Subviews */,
+				04A99BEA2D2279F200EC6D0C /* LipLoreZoneController.swift */,
+				04A99BEB2D2279F200EC6D0C /* LipLoreZoneController.xib */,
+				049BB9EB2D262FF3003D0FF7 /* VivaLipSettingViewController.swift */,
+				049BB9EC2D262FF3003D0FF7 /* VivaLipSettingViewController.xib */,
+				049BB9EF2D263550003D0FF7 /* VlInsightLensViewController.swift */,
+				049BB9F02D263550003D0FF7 /* VlInsightLensViewController.xib */,
+				049BB9F32D263945003D0FF7 /* VlResponsePortalViewController.swift */,
+				049BB9F42D263945003D0FF7 /* VlResponsePortalViewController.xib */,
+				049BB9F72D263AB3003D0FF7 /* VlRestrictedZoneViewController.swift */,
+				049BB9F82D263AB3003D0FF7 /* VlRestrictedZoneViewController.xib */,
+				049BB9FB2D263B3F003D0FF7 /* VlCharmUnitsViewController.swift */,
+				049BB9FC2D263B3F003D0FF7 /* VlCharmUnitsViewController.xib */,
+				049BBA032D263E2B003D0FF7 /* VlBeautyConnectViewController.swift */,
+				049BBA042D263E2B003D0FF7 /* VlBeautyConnectViewController.xib */,
+			);
+			path = LipLoreZone;
+			sourceTree = "<group>";
+		};
+		047D49882D1EA85700309569 /* VLCoreCurator */ = {
+			isa = PBXGroup;
+			children = (
+				049518942D22691100CDF80B /* SubViews */,
+				047D49892D1EA8AC00309569 /* VLCoreCurator.swift */,
+				047D498B2D1EA97200309569 /* NavigationBarConfigurable.swift */,
+				047D498F2D1EAE3E00309569 /* LoginCurator.swift */,
+				047D49902D1EAE3E00309569 /* LoginCurator.xib */,
+				04A99BE02D22790B00EC6D0C /* VlTabbarController.swift */,
+				0499F3712D55D69C00867720 /* CosmeticInteractionTermsViewController.swift */,
+				0499F3722D55D69C00867720 /* CosmeticInteractionTermsViewController.xib */,
+				0499F3672D55AB1300867720 /* MakeupJourneyViewController.swift */,
+				0499F3682D55AB1300867720 /* MakeupJourneyViewController.xib */,
+				0499F36D2D55BA9700867720 /* TrendNavigatorViewController.swift */,
+				0499F36E2D55BA9700867720 /* TrendNavigatorViewController.xib */,
+				0494474A2D2685220034BB37 /* LipEssenceArchive.plist */,
+			);
+			path = VLCoreCurator;
+			sourceTree = "<group>";
+		};
+		049518942D22691100CDF80B /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				049518952D226A5300CDF80B /* VlUserTermView.swift */,
+				049518972D226A9300CDF80B /* VlUserTermView.xib */,
+				04D6B3372D228B9300423DBE /* VlMenuCollectionView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		0498CC752D22A2BE00A656E1 /* RoboChitChat */ = {
+			isa = PBXGroup;
+			children = (
+				0498CC782D22A2EC00A656E1 /* RoboChitChatCurator.swift */,
+				0498CC792D22A2EC00A656E1 /* RoboChitChatCurator.xib */,
+				045BAE2F2D23C10100EDA86F /* BlushBloomForumViewController.swift */,
+				045BAE302D23C10100EDA86F /* BlushBloomForumViewController.xib */,
+				042F80392D2BA71A0070ABC1 /* ChitInfoStruct.swift */,
+			);
+			path = RoboChitChat;
+			sourceTree = "<group>";
+		};
+		049D721C2D23C9000083E3C4 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				049D721D2D23C9140083E3C4 /* RadianceHubTableViewCell.swift */,
+				049D721E2D23C9140083E3C4 /* RadianceHubTableViewCell.xib */,
+				04191CB22D23E5940060D934 /* VlMessageListTableViewCell.swift */,
+				04191CB32D23E5940060D934 /* VlMessageListTableViewCell.xib */,
+				04191CB62D23E7780060D934 /* ChitBotsCollectionViewCell.swift */,
+				04191CB72D23E7780060D934 /* ChitBotsCollectionViewCell.xib */,
+				04BBCE872D27EB88001B5084 /* RadianceDetailCollectionViewCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		04A99BEE2D22841A00EC6D0C /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				04A99BEF2D22843E00EC6D0C /* BotSectionOneCell.swift */,
+				04A99BF02D22843E00EC6D0C /* BotSectionOneCell.xib */,
+				04D6B32F2D22863400423DBE /* ReboBeartyTableViewCell.swift */,
+				04D6B3302D22863400423DBE /* ReboBeartyTableViewCell.xib */,
+				045BAE232D23BA9B00EDA86F /* RoboChitChatMeTableViewCell.swift */,
+				045BAE242D23BA9B00EDA86F /* RoboChitChatMeTableViewCell.xib */,
+				045BAE272D23BC9400EDA86F /* RoboChitChatOtherTableViewCell.swift */,
+				045BAE282D23BC9400EDA86F /* RoboChitChatOtherTableViewCell.xib */,
+				045BAE2B2D23BE6B00EDA86F /* BlushBloomForumTableViewCell.swift */,
+				045BAE2C2D23BE6B00EDA86F /* BlushBloomForumTableViewCell.xib */,
+				04B4522A2D291C740014139F /* VlReportView.swift */,
+				04B4522C2D291C7B0014139F /* VlReportView.xib */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		5CA336CF01F064F202238629 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88DC4113EEBA0432D7AFBE28 /* Pods-VivaLip.debug.xcconfig */,
+				7C935EA0260D806D72320725 /* Pods-VivaLip.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7CD26E657A4710C0C87A02A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D1033C8714B90BA3CF452BD /* Pods_VivaLip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		047D49572D1E9E4800309569 /* VivaLip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047D496B2D1E9E4900309569 /* Build configuration list for PBXNativeTarget "VivaLip" */;
+			buildPhases = (
+				3B985C139494FDA4D094CF5A /* [CP] Check Pods Manifest.lock */,
+				047D49542D1E9E4800309569 /* Sources */,
+				047D49552D1E9E4800309569 /* Frameworks */,
+				047D49562D1E9E4800309569 /* Resources */,
+				6625AFC82A8B0976B3AB278D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VivaLip;
+			productName = VivaLip;
+			productReference = 047D49582D1E9E4800309569 /* VivaLip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		047D49502D1E9E4800309569 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					047D49572D1E9E4800309569 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 047D49532D1E9E4800309569 /* Build configuration list for PBXProject "VivaLip" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 047D494F2D1E9E4800309569;
+			productRefGroup = 047D49592D1E9E4800309569 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				047D49572D1E9E4800309569 /* VivaLip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047D49562D1E9E4800309569 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0499F3702D55BA9700867720 /* TrendNavigatorViewController.xib in Resources */,
+				049D72282D23D8CE0083E3C4 /* RadianCeDetailViewController.xib in Resources */,
+				0494474B2D2685220034BB37 /* LipEssenceArchive.plist in Resources */,
+				049BBA022D263C22003D0FF7 /* VlCharmUnitsCollectionViewCell.xib in Resources */,
+				04A99BE92D2279E200EC6D0C /* RadianceHubController.xib in Resources */,
+				049D72242D23CFF80083E3C4 /* PostBeautyCreationViewController.xib in Resources */,
+				049D72202D23C9140083E3C4 /* RadianceHubTableViewCell.xib in Resources */,
+				045BAE262D23BA9B00EDA86F /* RoboChitChatMeTableViewCell.xib in Resources */,
+				04A99BF12D22843E00EC6D0C /* BotSectionOneCell.xib in Resources */,
+				045BAE322D23C10100EDA86F /* BlushBloomForumViewController.xib in Resources */,
+				04191CB52D23E5940060D934 /* VlMessageListTableViewCell.xib in Resources */,
+				047D497D2D1E9F4400309569 /* Assets.xcassets in Resources */,
+				047D497F2D1E9F4400309569 /* LaunchScreen.storyboard in Resources */,
+				049518982D226A9300CDF80B /* VlUserTermView.xib in Resources */,
+				049BB9FA2D263AB3003D0FF7 /* VlRestrictedZoneViewController.xib in Resources */,
+				0432BC302D23F98100AFAC82 /* LipLoreRobotCollectionViewCell.xib in Resources */,
+				045BAE2E2D23BE6B00EDA86F /* BlushBloomForumTableViewCell.xib in Resources */,
+				04191CBE2D23F3D90060D934 /* LipLoreCollectionReusableView.xib in Resources */,
+				04D6B33B2D22923200423DBE /* GlamBotWorkshopController.xib in Resources */,
+				0499F36A2D55AB1300867720 /* MakeupJourneyViewController.xib in Resources */,
+				04B4522D2D291C7B0014139F /* VlReportView.xib in Resources */,
+				047D49922D1EAE3E00309569 /* LoginCurator.xib in Resources */,
+				045BAE2A2D23BC9400EDA86F /* RoboChitChatOtherTableViewCell.xib in Resources */,
+				049BB9F62D263945003D0FF7 /* VlResponsePortalViewController.xib in Resources */,
+				04D6B3312D22863400423DBE /* ReboBeartyTableViewCell.xib in Resources */,
+				049BBA062D263E2B003D0FF7 /* VlBeautyConnectViewController.xib in Resources */,
+				0499F3742D55D69C00867720 /* CosmeticInteractionTermsViewController.xib in Resources */,
+				049BB9FE2D263B3F003D0FF7 /* VlCharmUnitsViewController.xib in Resources */,
+				047D49802D1E9F4400309569 /* Main.storyboard in Resources */,
+				0432BC2C2D23F94C00AFAC82 /* LipLorePostCollectionViewCell.xib in Resources */,
+				049BB9F22D263550003D0FF7 /* VlInsightLensViewController.xib in Resources */,
+				04A99BE42D2279CC00EC6D0C /* RoboBeautyLoungeController.xib in Resources */,
+				04191CB92D23E7780060D934 /* ChitBotsCollectionViewCell.xib in Resources */,
+				0498CC7A2D22A2EC00A656E1 /* RoboChitChatCurator.xib in Resources */,
+				04191CB12D23E50D0060D934 /* VlMessageListViewController.xib in Resources */,
+				049BB9EE2D262FF3003D0FF7 /* VivaLipSettingViewController.xib in Resources */,
+				04A99BEC2D2279F200EC6D0C /* LipLoreZoneController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B985C139494FDA4D094CF5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VivaLip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6625AFC82A8B0976B3AB278D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VivaLip/Pods-VivaLip-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VivaLip/Pods-VivaLip-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VivaLip/Pods-VivaLip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		047D49542D1E9E4800309569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0494474F2D2686D80034BB37 /* LipEssenceModel.swift in Sources */,
+				04A99BF22D22843E00EC6D0C /* BotSectionOneCell.swift in Sources */,
+				0499F3692D55AB1300867720 /* MakeupJourneyViewController.swift in Sources */,
+				0498CC7B2D22A2EC00A656E1 /* RoboChitChatCurator.swift in Sources */,
+				04D6B33C2D22923200423DBE /* GlamBotWorkshopController.swift in Sources */,
+				04191CBD2D23F3D80060D934 /* LipLoreCollectionReusableView.swift in Sources */,
+				047D497A2D1E9F4400309569 /* AppDelegate.swift in Sources */,
+				047D498A2D1EA8AC00309569 /* VLCoreCurator.swift in Sources */,
+				049BB9FD2D263B3F003D0FF7 /* VlCharmUnitsViewController.swift in Sources */,
+				049BB9ED2D262FF3003D0FF7 /* VivaLipSettingViewController.swift in Sources */,
+				049D72232D23CFF80083E3C4 /* PostBeautyCreationViewController.swift in Sources */,
+				045BAE312D23C10100EDA86F /* BlushBloomForumViewController.swift in Sources */,
+				04A99BE12D22790B00EC6D0C /* VlTabbarController.swift in Sources */,
+				0499F3732D55D69C00867720 /* CosmeticInteractionTermsViewController.swift in Sources */,
+				04191CB02D23E50D0060D934 /* VlMessageListViewController.swift in Sources */,
+				049BB9F92D263AB3003D0FF7 /* VlRestrictedZoneViewController.swift in Sources */,
+				04BBCE892D27EB88001B5084 /* RadianceDetailCollectionViewCell.swift in Sources */,
+				04D6B3322D22863400423DBE /* ReboBeartyTableViewCell.swift in Sources */,
+				0432BC2D2D23F94C00AFAC82 /* LipLorePostCollectionViewCell.swift in Sources */,
+				04A99BE82D2279E200EC6D0C /* RadianceHubController.swift in Sources */,
+				045BAE2D2D23BE6B00EDA86F /* BlushBloomForumTableViewCell.swift in Sources */,
+				0499F36F2D55BA9700867720 /* TrendNavigatorViewController.swift in Sources */,
+				049BB9F12D263550003D0FF7 /* VlInsightLensViewController.swift in Sources */,
+				049BBA052D263E2B003D0FF7 /* VlBeautyConnectViewController.swift in Sources */,
+				04191CB42D23E5940060D934 /* VlMessageListTableViewCell.swift in Sources */,
+				049518932D22682F00CDF80B /* MBProgressHUD.swift in Sources */,
+				04191CB82D23E7780060D934 /* ChitBotsCollectionViewCell.swift in Sources */,
+				0432BC312D23F98100AFAC82 /* LipLoreRobotCollectionViewCell.swift in Sources */,
+				049518962D226A5300CDF80B /* VlUserTermView.swift in Sources */,
+				049518912D223E1700CDF80B /* VlManager.swift in Sources */,
+				04A99BE52D2279CC00EC6D0C /* RoboBeautyLoungeController.swift in Sources */,
+				049D721F2D23C9140083E3C4 /* RadianceHubTableViewCell.swift in Sources */,
+				049BBA012D263C22003D0FF7 /* VlCharmUnitsCollectionViewCell.swift in Sources */,
+				047D497B2D1E9F4400309569 /* SceneDelegate.swift in Sources */,
+				042F803A2D2BA71A0070ABC1 /* ChitInfoStruct.swift in Sources */,
+				049BB9F52D263945003D0FF7 /* VlResponsePortalViewController.swift in Sources */,
+				04A99BED2D2279F200EC6D0C /* LipLoreZoneController.swift in Sources */,
+				045BAE292D23BC9400EDA86F /* RoboChitChatOtherTableViewCell.swift in Sources */,
+				04D6B3382D228B9300423DBE /* VlMenuCollectionView.swift in Sources */,
+				047D49912D1EAE3E00309569 /* LoginCurator.swift in Sources */,
+				047D498C2D1EA97200309569 /* NavigationBarConfigurable.swift in Sources */,
+				049D72272D23D8CE0083E3C4 /* RadianCeDetailViewController.swift in Sources */,
+				04B4522B2D291C740014139F /* VlReportView.swift in Sources */,
+				045BAE252D23BA9B00EDA86F /* RoboChitChatMeTableViewCell.swift in Sources */,
+				0499F36C2D55B33400867720 /* VivalipTools.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		047D49742D1E9F4400309569 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047D49732D1E9F4400309569 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		047D49762D1E9F4400309569 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047D49752D1E9F4400309569 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		047D496C2D1E9E4900309569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DC4113EEBA0432D7AFBE28 /* Pods-VivaLip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VivaLip/VivaLip.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VivaLip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VivaLip;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to your camera to take pictures and create your robot";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To help provide personalized beauty recommendations and nearby makeup events, VivaLip requires access to your location.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please agree to use the microphone for the video call";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please agree to access your photo album to select pictures to create your robot";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivalip.vl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		047D496D2D1E9E4900309569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C935EA0260D806D72320725 /* Pods-VivaLip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VivaLip/VivaLip.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VivaLip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VivaLip;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to your camera to take pictures and create your robot";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To help provide personalized beauty recommendations and nearby makeup events, VivaLip requires access to your location.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please agree to use the microphone for the video call";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please agree to access your photo album to select pictures to create your robot";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivalip.vl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		047D496E2D1E9E4900309569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		047D496F2D1E9E4900309569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		047D49532D1E9E4800309569 /* Build configuration list for PBXProject "VivaLip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047D496E2D1E9E4900309569 /* Debug */,
+				047D496F2D1E9E4900309569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047D496B2D1E9E4900309569 /* Build configuration list for PBXNativeTarget "VivaLip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047D496C2D1E9E4900309569 /* Debug */,
+				047D496D2D1E9E4900309569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 047D49502D1E9E4800309569 /* Project object */;
+}

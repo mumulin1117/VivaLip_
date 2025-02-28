@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h3b-Bi-ltg" customClass="VlReportView" customModule="VivaLip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="564"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wog-M6-qFB">
+                    <rect key="frame" x="0.0" y="20" width="351" height="544"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" tag="2003" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrE-NU-Sb8">
+                            <rect key="frame" x="15" y="473" width="188" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51" id="DbI-Ty-0ej"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Submit" backgroundImage="buttonVlBackground">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonTouchedInSide:" destination="h3b-Bi-ltg" eventType="touchUpInside" id="Og5-GY-FFs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtm-j0-KeP">
+                            <rect key="frame" x="213" y="473" width="123" height="51"/>
+                            <color key="backgroundColor" red="1" green="0.76078431369999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.4549019608" green="0.047058823530000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonTouchedInSide:" destination="h3b-Bi-ltg" eventType="touchUpInside" id="wxV-AA-aU4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63i-nU-jby">
+                            <rect key="frame" x="16" y="66" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Yry-6R-VmW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="   Harassment" image="vlReport"/>
+                            <state key="selected" image="vlReportFill"/>
+                            <connections>
+                                <action selector="reportTypeVlSwitchInSide:" destination="h3b-Bi-ltg" eventType="touchUpInside" id="Zc3-7p-p42"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Za-aT-t4Z">
+                            <rect key="frame" x="16" y="111" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="yfd-ew-iYQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="   Malicious fraud" image="vlReport"/>
+                            <state key="selected" image="vlReportFill"/>
+                            <connections>
+                                <action selector="reportTypeVlSwitchInSide:" destination="h3b-Bi-ltg" eventType="touchUpInside" id="Db7-D8-mtR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqw-qS-OHp">
+                            <rect key="frame" x="16" y="156" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="hA8-m0-Kt8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="   Pornography" image="vlReport"/>
+                            <state key="selected" image="vlReportFill"/>
+                            <connections>
+                                <action selector="reportTypeVlSwitchInSide:" destination="h3b-Bi-ltg" eventType="touchUpInside" id="TzZ-5N-Xtb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSF-Zp-gv1">
+                            <rect key="frame" x="16" y="201" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="B4K-gG-so6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="   Malicious insults" image="vlReport"/>
+                            <state key="selected" image="vlReportFill"/>
+                            <connections>
+                                <action selector="reportTypeVlSwitchInSide:" destination="h3b-Bi-ltg" eventType="touchUpInside" id="uPH-Kv-aiH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSb-Tf-LwR">
+                            <rect key="frame" x="16" y="246" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6QO-P4-Bv6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="   False Information" image="vlReport"/>
+                            <state key="selected" image="vlReportFill"/>
+                            <connections>
+                                <action selector="reportTypeVlSwitchInSide:" destination="h3b-Bi-ltg" eventType="touchUpInside" id="dgN-y2-Pc6"/>
+                            </connections>
+                        </button>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bf8-1g-ZGW">
+                            <rect key="frame" x="16" y="291" width="319" height="162"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPO-BT-au9">
+                                    <rect key="frame" x="15" y="15" width="289" height="132"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIg-Ms-scA">
+                                    <rect key="frame" x="20" y="23" width="279" height="36"/>
+                                    <string key="text">Supplementary description 
+(optional)...</string>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="IPO-BT-au9" secondAttribute="bottom" constant="15" id="Ezc-z5-VRS"/>
+                                <constraint firstAttribute="trailing" secondItem="YIg-Ms-scA" secondAttribute="trailing" constant="20" id="IGq-JT-Z0f"/>
+                                <constraint firstItem="IPO-BT-au9" firstAttribute="leading" secondItem="bf8-1g-ZGW" secondAttribute="leading" constant="15" id="KB2-FS-nIM"/>
+                                <constraint firstItem="YIg-Ms-scA" firstAttribute="top" secondItem="bf8-1g-ZGW" secondAttribute="top" constant="23" id="bUu-jU-ZiA"/>
+                                <constraint firstAttribute="height" constant="162" id="bwT-KY-B3X"/>
+                                <constraint firstItem="IPO-BT-au9" firstAttribute="top" secondItem="bf8-1g-ZGW" secondAttribute="top" constant="15" id="gXa-WL-Mr9"/>
+                                <constraint firstAttribute="trailing" secondItem="IPO-BT-au9" secondAttribute="trailing" constant="15" id="iT9-ia-TKw"/>
+                                <constraint firstItem="YIg-Ms-scA" firstAttribute="leading" secondItem="bf8-1g-ZGW" secondAttribute="leading" constant="20" id="lrd-i9-AB5"/>
+                                <constraint firstAttribute="width" constant="319" id="oSh-eD-WpX"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30980392159999998" green="0.047058823530000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="jtm-j0-KeP" firstAttribute="bottom" secondItem="LrE-NU-Sb8" secondAttribute="bottom" id="3yW-TV-vBs"/>
+                        <constraint firstAttribute="trailing" secondItem="63i-nU-jby" secondAttribute="trailing" constant="16" id="6PK-Ov-mGC"/>
+                        <constraint firstItem="8Za-aT-t4Z" firstAttribute="trailing" secondItem="63i-nU-jby" secondAttribute="trailing" id="7Mm-oH-Mq8"/>
+                        <constraint firstItem="Wqw-qS-OHp" firstAttribute="top" secondItem="8Za-aT-t4Z" secondAttribute="bottom" constant="5" id="A4T-Xh-D2V"/>
+                        <constraint firstItem="LrE-NU-Sb8" firstAttribute="leading" secondItem="Wog-M6-qFB" secondAttribute="leading" constant="15" id="Dbm-an-E8m"/>
+                        <constraint firstItem="jtm-j0-KeP" firstAttribute="leading" secondItem="LrE-NU-Sb8" secondAttribute="trailing" constant="10" id="GJK-a2-iYC"/>
+                        <constraint firstItem="63i-nU-jby" firstAttribute="leading" secondItem="Wog-M6-qFB" secondAttribute="leading" constant="16" id="GMA-Eo-A81"/>
+                        <constraint firstItem="8Za-aT-t4Z" firstAttribute="top" secondItem="63i-nU-jby" secondAttribute="bottom" constant="5" id="Gqg-vh-mNc"/>
+                        <constraint firstItem="63i-nU-jby" firstAttribute="top" secondItem="Wog-M6-qFB" secondAttribute="top" constant="66" id="KQL-lV-pZg"/>
+                        <constraint firstItem="OSb-Tf-LwR" firstAttribute="top" secondItem="bSF-Zp-gv1" secondAttribute="bottom" constant="5" id="Kii-7x-h2S"/>
+                        <constraint firstItem="bf8-1g-ZGW" firstAttribute="top" secondItem="OSb-Tf-LwR" secondAttribute="bottom" constant="5" id="MY4-El-JBE"/>
+                        <constraint firstAttribute="trailing" secondItem="jtm-j0-KeP" secondAttribute="trailing" constant="15" id="OZs-xj-zV0"/>
+                        <constraint firstItem="OSb-Tf-LwR" firstAttribute="leading" secondItem="bSF-Zp-gv1" secondAttribute="leading" id="QU7-Xa-6yr"/>
+                        <constraint firstItem="LrE-NU-Sb8" firstAttribute="top" secondItem="bf8-1g-ZGW" secondAttribute="bottom" constant="20" id="UxV-qe-I9V"/>
+                        <constraint firstItem="OSb-Tf-LwR" firstAttribute="trailing" secondItem="bSF-Zp-gv1" secondAttribute="trailing" id="VyI-3b-JFN"/>
+                        <constraint firstItem="bf8-1g-ZGW" firstAttribute="trailing" secondItem="OSb-Tf-LwR" secondAttribute="trailing" id="WDw-sL-TjX"/>
+                        <constraint firstItem="jtm-j0-KeP" firstAttribute="height" secondItem="LrE-NU-Sb8" secondAttribute="height" id="agK-fo-W3k"/>
+                        <constraint firstAttribute="bottom" secondItem="LrE-NU-Sb8" secondAttribute="bottom" constant="20" id="amR-LH-MLt"/>
+                        <constraint firstItem="bSF-Zp-gv1" firstAttribute="trailing" secondItem="Wqw-qS-OHp" secondAttribute="trailing" id="cXb-S7-eeA"/>
+                        <constraint firstItem="LrE-NU-Sb8" firstAttribute="width" secondItem="jtm-j0-KeP" secondAttribute="width" multiplier="188/123" id="eIp-Gc-qpT"/>
+                        <constraint firstItem="Wqw-qS-OHp" firstAttribute="leading" secondItem="8Za-aT-t4Z" secondAttribute="leading" id="ixt-lP-7hm"/>
+                        <constraint firstItem="bSF-Zp-gv1" firstAttribute="top" secondItem="Wqw-qS-OHp" secondAttribute="bottom" constant="5" id="kVE-bY-kOU"/>
+                        <constraint firstItem="bf8-1g-ZGW" firstAttribute="leading" secondItem="OSb-Tf-LwR" secondAttribute="leading" id="nTk-WT-LPK"/>
+                        <constraint firstItem="8Za-aT-t4Z" firstAttribute="leading" secondItem="63i-nU-jby" secondAttribute="leading" id="qle-LN-e9g"/>
+                        <constraint firstItem="Wqw-qS-OHp" firstAttribute="trailing" secondItem="8Za-aT-t4Z" secondAttribute="trailing" id="sVd-r8-J6a"/>
+                        <constraint firstItem="bSF-Zp-gv1" firstAttribute="leading" secondItem="Wqw-qS-OHp" secondAttribute="leading" id="z77-Zq-5nv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO2-Tg-3mU">
+                    <rect key="frame" x="121" y="0.0" width="109" height="40"/>
+                    <color key="backgroundColor" red="0.80392156859999997" green="0.14901960780000001" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nIb-rh-Y3q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="   Report Type   ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="qlR-6f-3m6"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Wog-M6-qFB" firstAttribute="top" secondItem="h3b-Bi-ltg" secondAttribute="top" constant="20" id="5lo-Yd-D0N"/>
+                <constraint firstAttribute="bottom" secondItem="Wog-M6-qFB" secondAttribute="bottom" id="FN8-E2-clg"/>
+                <constraint firstItem="nO2-Tg-3mU" firstAttribute="centerX" secondItem="h3b-Bi-ltg" secondAttribute="centerX" id="HdZ-g4-3qM"/>
+                <constraint firstItem="Wog-M6-qFB" firstAttribute="leading" secondItem="h3b-Bi-ltg" secondAttribute="leading" id="MJo-wD-gzw"/>
+                <constraint firstItem="nO2-Tg-3mU" firstAttribute="top" secondItem="h3b-Bi-ltg" secondAttribute="top" id="NZb-IS-AaC"/>
+                <constraint firstAttribute="trailing" secondItem="Wog-M6-qFB" secondAttribute="trailing" id="yVE-H5-uKN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="falseVlHolder" destination="YIg-Ms-scA" id="80G-wp-DaE"/>
+                <outlet property="falseVlTextView" destination="IPO-BT-au9" id="Xxk-Hf-Eia"/>
+                <outlet property="vlSubmitButton" destination="LrE-NU-Sb8" id="gha-fr-1XS"/>
+            </connections>
+            <point key="canvasLocation" x="139.69465648854961" y="36.971830985915496"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buttonVlBackground" width="188" height="51"/>
+        <image name="vlReport" width="15" height="15"/>
+        <image name="vlReportFill" width="15" height="15"/>
+    </resources>
+</document>

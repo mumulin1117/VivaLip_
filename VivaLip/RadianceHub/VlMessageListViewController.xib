@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VlMessageListViewController" customModule="VivaLip" customModuleProvider="target">
+            <connections>
+                <outlet property="botCollectionList" destination="kF0-An-8cF" id="eA1-OT-Xhc"/>
+                <outlet property="chitListTableList" destination="bwx-VC-HqM" id="DQ0-nm-SDk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botChitBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7zh-wQ-dPL">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kF0-An-8cF">
+                    <rect key="frame" x="0.0" y="94" width="393" height="102"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="102" id="gVt-Ns-bzE"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7VO-yS-ezI">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="115" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="bwx-VC-HqM">
+                    <rect key="frame" x="0.0" y="221" width="393" height="597"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="srL-jm-otA"/>
+                        <outlet property="delegate" destination="-1" id="rQR-GM-FMf"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bwx-VC-HqM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="80E-83-fet"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bwx-VC-HqM" secondAttribute="trailing" id="Ekr-bC-iR8"/>
+                <constraint firstItem="7zh-wQ-dPL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hb6-Vc-Vu5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kF0-An-8cF" secondAttribute="trailing" id="JcZ-VJ-66S"/>
+                <constraint firstItem="bwx-VC-HqM" firstAttribute="top" secondItem="kF0-An-8cF" secondAttribute="bottom" constant="25" id="K2d-Q9-dw2"/>
+                <constraint firstItem="7zh-wQ-dPL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OqX-pF-dGC"/>
+                <constraint firstItem="kF0-An-8cF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="U76-K5-YST"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bwx-VC-HqM" secondAttribute="bottom" id="UB0-dc-D4k"/>
+                <constraint firstItem="7zh-wQ-dPL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iyB-oT-ORZ"/>
+                <constraint firstItem="kF0-An-8cF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sdP-7I-nGy"/>
+                <constraint firstAttribute="bottom" secondItem="7zh-wQ-dPL" secondAttribute="bottom" id="zg3-Ym-78o"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="botChitBackground" width="375" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

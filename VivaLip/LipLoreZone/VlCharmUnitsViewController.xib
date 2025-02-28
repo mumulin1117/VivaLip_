@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VlCharmUnitsViewController" customModule="VivaLip" customModuleProvider="target">
+            <connections>
+                <outlet property="charmUnitsVlCounter" destination="Bbz-HF-pQQ" id="F4S-DX-LhO"/>
+                <outlet property="unitsCollection" destination="M7z-oG-P9v" id="N8Q-or-olm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botChitBackground" translatesAutoresizingMaskIntoConstraints="NO" id="um7-kP-LCd">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74i-aV-6Gb">
+                    <rect key="frame" x="12" y="80" width="369" height="125"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lipLoreTopUpBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7O3-Yv-PEQ">
+                            <rect key="frame" x="0.0" y="0.0" width="369" height="125"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining coins &gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7X-cq-43n">
+                            <rect key="frame" x="150" y="98" width="105.66666666666669" height="15"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbz-HF-pQQ">
+                            <rect key="frame" x="150" y="67" width="15.333333333333343" height="27"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7O3-Yv-PEQ" firstAttribute="top" secondItem="74i-aV-6Gb" secondAttribute="top" id="7XB-2d-7iz"/>
+                        <constraint firstItem="7O3-Yv-PEQ" firstAttribute="leading" secondItem="74i-aV-6Gb" secondAttribute="leading" id="9Pt-Ob-80D"/>
+                        <constraint firstItem="Bbz-HF-pQQ" firstAttribute="leading" secondItem="z7X-cq-43n" secondAttribute="leading" id="CXP-Sq-YgY"/>
+                        <constraint firstAttribute="trailing" secondItem="7O3-Yv-PEQ" secondAttribute="trailing" id="FBO-Oh-bIo"/>
+                        <constraint firstAttribute="bottom" secondItem="7O3-Yv-PEQ" secondAttribute="bottom" id="Zau-H0-4HI"/>
+                        <constraint firstItem="z7X-cq-43n" firstAttribute="top" secondItem="Bbz-HF-pQQ" secondAttribute="bottom" constant="4" id="a1e-81-rMX"/>
+                        <constraint firstItem="z7X-cq-43n" firstAttribute="leading" secondItem="74i-aV-6Gb" secondAttribute="leading" constant="150" id="aZS-DL-g8O"/>
+                        <constraint firstAttribute="height" constant="125" id="lk5-0G-qKF"/>
+                        <constraint firstAttribute="bottom" secondItem="z7X-cq-43n" secondAttribute="bottom" constant="12" id="sWp-Mq-uyc"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M7z-oG-P9v">
+                    <rect key="frame" x="0.0" y="276" width="393" height="576"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pvI-pq-gag">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unitRecharge amount" translatesAutoresizingMaskIntoConstraints="NO" id="Z8b-eZ-k6J">
+                    <rect key="frame" x="82" y="235" width="229" height="16"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="um7-kP-LCd" secondAttribute="trailing" id="3nA-E0-Udn"/>
+                <constraint firstItem="M7z-oG-P9v" firstAttribute="top" secondItem="74i-aV-6Gb" secondAttribute="bottom" constant="71" id="6Hi-fF-Hu6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M7z-oG-P9v" secondAttribute="trailing" id="Ch3-2h-e0v"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="74i-aV-6Gb" secondAttribute="trailing" constant="12" id="LVb-wI-pYP"/>
+                <constraint firstAttribute="bottom" secondItem="M7z-oG-P9v" secondAttribute="bottom" id="O6G-Ig-7My"/>
+                <constraint firstItem="74i-aV-6Gb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="Oww-QP-hZb"/>
+                <constraint firstItem="Z8b-eZ-k6J" firstAttribute="centerX" secondItem="um7-kP-LCd" secondAttribute="centerX" id="UpA-ea-J6B"/>
+                <constraint firstItem="M7z-oG-P9v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VUR-lT-YNw"/>
+                <constraint firstItem="um7-kP-LCd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cVH-e8-0Cp"/>
+                <constraint firstAttribute="bottom" secondItem="um7-kP-LCd" secondAttribute="bottom" id="gqU-aI-hTa"/>
+                <constraint firstItem="Z8b-eZ-k6J" firstAttribute="top" secondItem="74i-aV-6Gb" secondAttribute="bottom" constant="30" id="j6F-qX-chz"/>
+                <constraint firstItem="74i-aV-6Gb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="nVa-WI-bh0"/>
+                <constraint firstItem="um7-kP-LCd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x5F-jL-xEq"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="botChitBackground" width="375" height="812"/>
+        <image name="lipLoreTopUpBackground" width="353" height="125"/>
+        <image name="unitRecharge amount" width="228.66667175292969" height="15.666666984558105"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
