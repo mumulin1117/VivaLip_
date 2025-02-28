@@ -1,6 +1,6 @@
 workflows:
   ios-native-workflow:
-    name: VivaLip
+    name: viva2
     max_build_duration: 120
     instance_type: mac_mini_m1
     integrations:
@@ -13,7 +13,7 @@ workflows:
         BUNDLE_ID: "com.vivalip.vl"
         XCODE_WORKSPACE: vivalip.xcworkspace # <-- Put the name of your Xcode workspace here
         XCODE_SCHEME: "VivaLip" # <-- Put the name of your Xcode scheme here
-#        APP_STORE_APPLE_ID: 6498549442
+#        APP_STORE_APPLE_ID: 6740262924
       xcode: "16.0"
       cocoapods: default
     scripts:
