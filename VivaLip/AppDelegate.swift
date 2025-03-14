@@ -22,24 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func  configAdJustSinere(){
-        let config = ADJConfig(
+
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let conVLOAffig = ADJConfig(
                appToken: "hll5d6xxutxc",
                environment: ADJEnvironmentProduction
            )
-        config?.logLevel = .verbose
-        config?.enableSendingInBackground()
+        
       
         
-        Adjust.initSdk(config)
-        Adjust.attribution() { attribution in
-            let initVD = ADJEvent.init(eventToken: "wrk93h")
-            Adjust.trackEvent(initVD)
-        }
-    }
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        configAdJustSinere()
+       
         SwiftyStoreKit.completeTransactions(atomically: true) { vlPurchases in
             for vlPurchaseAction in vlPurchases {
                 switch vlPurchaseAction.transaction.transactionState {
@@ -53,11 +46,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        conVLOAffig?.logLevel = .verbose
+        conVLOAffig?.enableSendingInBackground()
         
         if vlPushCenterToken.count == 0 {
             ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         }
-        
+        Adjust.initSdk(conVLOAffig)
+        Adjust.attribution() { attribution in
+            let initVD = ADJEvent.init(eventToken: "wrk93h")
+            Adjust.trackEvent(initVD)
+        }
         self.registerVivaLipPushNotifications()
         return true
     }
