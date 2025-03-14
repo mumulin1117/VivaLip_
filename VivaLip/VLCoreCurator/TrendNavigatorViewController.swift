@@ -10,6 +10,7 @@ import MBProgressHUD
 import MMKV
 import CoreLocation
 import WebKit
+import AdjustSdk
 
 class TrendNavigatorViewController: VLCoreCurator {
     
@@ -88,6 +89,8 @@ class TrendNavigatorViewController: VLCoreCurator {
     }
 
     @IBAction func trainGlamBotForLipstickSuggestions(_ sender: Any) {
+        
+    
         
         if vlAroundState >= 0 {
             glowVlMatrix.append(1982)

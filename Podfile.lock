@@ -1,4 +1,9 @@
 PODS:
+  - Adjust (5.1.1):
+    - Adjust/Adjust (= 5.1.1)
+  - Adjust/Adjust (5.1.1):
+    - AdjustSignature (= 3.35.2)
+  - AdjustSignature (3.35.2)
   - Alamofire (5.10.1)
   - FBAEMKit (17.4.0):
     - FBSDKCoreKit_Basics (= 17.4.0)
@@ -104,6 +109,7 @@ PODS:
   - ZLPhotoBrowser/Core (4.5.6)
 
 DEPENDENCIES:
+  - Adjust (~> 5.1.1)
   - Alamofire
   - FBSDKCoreKit
   - FSPagerView
@@ -125,6 +131,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Adjust
+    - AdjustSignature
     - Alamofire
     - FBAEMKit
     - FBSDKCoreKit
@@ -156,6 +164,8 @@ SPEC REPOS:
     - ZLPhotoBrowser
 
 SPEC CHECKSUMS:
+  Adjust: 5f5e998cf1446d44d93f91ec8b7b7dd40eaa922d
+  AdjustSignature: 23b9e5d4adcadffc303bb6b410fde617dd88504f
   Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
   FBAEMKit: 58cb5f302cdd715a56d4c1d0dfdd2e423ac1421a
   FBSDKCoreKit: 94d7461d0cecf441b1ba7c41acfff41daa8ccd41
@@ -186,6 +196,6 @@ SPEC CHECKSUMS:
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   ZLPhotoBrowser: 9fdd801da47d5aaff778b8213fc711bbadab9cb2
 
-PODFILE CHECKSUM: bcc1178df67503d084f9874c549a9100750be153
+PODFILE CHECKSUM: ed393e844ffa62b5129d76f2bda7d5e9b408a3e1
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

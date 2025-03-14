@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyStoreKit
 import MBProgressHUD
 import FBSDKCoreKit
+import AdjustSdk
 
 
 struct VivalipTools {
@@ -151,10 +152,22 @@ struct VivalipTools {
                                                         if let charmUnitsItem = charmUnits.first(where: {$0.keys.contains(charmUnitsWords)}){
                                                             if let charmunits = charmUnitsItem[charmUnitsWords],let charmUnitsValue = charmunits["charmUnitsWords3"] {
                                                                 vlReceiveStatus += 101
+                                                               
                                                                 AppEvents.shared.logEvent(AppEvents.Name.purchased, parameters: [
                                                                     .init(vlDataRefiner("tyoutradlcPzrwiocce")): charmUnitsValue,
                                                                     .init(vlDataRefiner("cquarvrkeynmcjy")):vlDataRefiner("UlSjD")
                                                                 ])
+                                                                
+                                                                //adjust
+                                                                let event = ADJEvent(eventToken: "j4b4cn")
+                                                                event?.setRevenue(Double(charmUnitsValue) ?? 0.0 , currency: "USD")
+                                                                event?.setProductId(vlLashLab.productId)
+                                                                event?.setTransactionId(vlIdentifier)
+                                                                
+                                                                Adjust.trackEvent(event)
+                                                                
+                                                                
+                                                                
                                                             }
                                                         }
                                                     }
@@ -201,6 +214,10 @@ struct VivalipTools {
                         if vlReceiveStatus <= 0 && charmUnitsWords.isEmpty == false {
                             VlManager.defaultManager.charmUnitsWordsInfo["state"] = vlDataRefiner("pfazyjmielnotdCzauncchejlzlwedd")
                         }
+                        
+                        
+                     
+                        
                     case .cloudServicePermissionDenied:
                         //                            print("Access to cloud service information is not allowed")
                         vlReceiveStatus = -1
@@ -249,6 +266,11 @@ struct VivalipTools {
             }
         }
     }
+    
+    
+   
+   
+    
 }
 
 

@@ -9,7 +9,7 @@ import UIKit
 import MMKV
 import SwiftyStoreKit
 import FBSDKCoreKit
-
+import AdjustSdk
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -21,9 +21,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func  configAdJustSinere(){
+        let config = ADJConfig(
+               appToken: "hll5d6xxutxc",
+               environment: ADJEnvironmentProduction
+           )
+        config?.logLevel = .verbose
+        config?.enableSendingInBackground()
+      
+        
+        Adjust.initSdk(config)
+        Adjust.attribution() { attribution in
+            let initVD = ADJEvent.init(eventToken: "wrk93h")
+            Adjust.trackEvent(initVD)
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    
+        configAdJustSinere()
         SwiftyStoreKit.completeTransactions(atomically: true) { vlPurchases in
             for vlPurchaseAction in vlPurchases {
                 switch vlPurchaseAction.transaction.transactionState {
