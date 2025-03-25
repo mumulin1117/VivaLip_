@@ -185,7 +185,7 @@ class TrendNavigatorViewController: VLCoreCurator {
                     }
                     
                 }else {
-                    MBProgressHUD.vlShowToastText("\(response)", afterDelay: 10)
+                    MBProgressHUD.vlShowToastText("\(response["message"] ?? "log in failed!")", afterDelay: 10)
                 }
             }
         } fetchFailure: {
