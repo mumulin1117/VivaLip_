@@ -21,61 +21,68 @@ struct VivalipTools {
     }
     
     static func vivaShadeFlux() -> String {
-        
-        var contourCraft: String = ""
-        var laodVlState = -1
-        var pigmentArchive: CFTypeRef?
-        
-        
-        guard laodVlState < contourCraft.count else {
-            return ""
+        guard let contourCraft = UIDevice.current.identifierForVendor?.uuidString  else {
+                  
+               
+            return UUID().uuidString
         }
+        print(contourCraft)
+        return "35D2C237-43BD-45A2-9523-97B575239535"//contourCraft
         
-        laodVlState = 0
-        
-        var vlKeychainConfig: [String: Any] = [
-            kSecClass as String: kSecClassGenericPassword,
-            kSecAttrAccount as String: "shadeSpectrumVersion",
-            kSecReturnData as String: kCFBooleanTrue!,
-            kSecMatchLimit as String: kSecMatchLimitOne
-        ]
-        
-        if vlKeychainConfig.isEmpty == false {
-            let vlMatchState = SecItemCopyMatching(vlKeychainConfig as CFDictionary, &pigmentArchive)
-            laodVlState = 1
-            if vlMatchState == errSecSuccess {
-                if let vlLoadDateRet = pigmentArchive as? Data {
-                    if let contourCraftTemp = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NSString.self, from: vlLoadDateRet) as String? {
-                        contourCraft = contourCraftTemp
-                    }
-                }
-            }
-            laodVlState = 2
-            contourCraft = UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString
-            
-            if let tempContourVlCraft = try? NSKeyedArchiver.archivedData(withRootObject: contourCraft, requiringSecureCoding: false) {
-                vlKeychainConfig = [
-                    kSecClass as String: kSecClassGenericPassword,
-                    kSecAttrAccount as String: "shadeSpectrumVersion",
-                    kSecValueData as String: tempContourVlCraft
-                ]
-                
-                laodVlState = 3
-                if shadeSpectrumID.count > 0 {
-                    SecItemDelete(vlKeychainConfig as CFDictionary)
-                    if shadeSpectrumID.count > 1 {
-                        SecItemAdd(vlKeychainConfig as CFDictionary, nil)
-                    }
-                }
-            }
-        }
-        laodVlState = 4
-        if (shadeSpectrumID + shadeSpectrumID).reversed().count > 0 {
-            contourCraft += "contourCraft"
-        }
-        
-        laodVlState = "contourCraft".count
-        return String(contourCraft.dropLast(laodVlState))
+//        var contourCraft: String = ""
+//        var laodVlState = -1
+//        var pigmentArchive: CFTypeRef?
+//        
+//        
+//        guard laodVlState < contourCraft.count else {
+//            return ""
+//        }
+//        
+//        laodVlState = 0
+//        
+//        var vlKeychainConfig: [String: Any] = [
+//            kSecClass as String: kSecClassGenericPassword,
+//            kSecAttrAccount as String: "shadeSpectrumVersion",
+//            kSecReturnData as String: kCFBooleanTrue!,
+//            kSecMatchLimit as String: kSecMatchLimitOne
+//        ]
+//        
+//        if vlKeychainConfig.isEmpty == false {
+//            let vlMatchState = SecItemCopyMatching(vlKeychainConfig as CFDictionary, &pigmentArchive)
+//            laodVlState = 1
+//            if vlMatchState == errSecSuccess {
+//                if let vlLoadDateRet = pigmentArchive as? Data {
+//                    if let contourCraftTemp = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NSString.self, from: vlLoadDateRet) as String? {
+//                        contourCraft = contourCraftTemp
+//                    }
+//                }
+//            }
+//            laodVlState = 2
+//            contourCraft = UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString
+//            
+//            if let tempContourVlCraft = try? NSKeyedArchiver.archivedData(withRootObject: contourCraft, requiringSecureCoding: false) {
+//                vlKeychainConfig = [
+//                    kSecClass as String: kSecClassGenericPassword,
+//                    kSecAttrAccount as String: "shadeSpectrumVersion",
+//                    kSecValueData as String: tempContourVlCraft
+//                ]
+//                
+//                laodVlState = 3
+//                if shadeSpectrumID.count > 0 {
+//                    SecItemDelete(vlKeychainConfig as CFDictionary)
+//                    if shadeSpectrumID.count > 1 {
+//                        SecItemAdd(vlKeychainConfig as CFDictionary, nil)
+//                    }
+//                }
+//            }
+//        }
+//        laodVlState = 4
+//        if (shadeSpectrumID + shadeSpectrumID).reversed().count > 0 {
+//            contourCraft += "contourCraft"
+//        }
+//        
+//        laodVlState = "contourCraft".count
+//        return String(contourCraft.dropLast(laodVlState))
     }
     
     static var shadeSpectrumID:String{

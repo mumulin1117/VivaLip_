@@ -86,16 +86,18 @@ class MakeupJourneyViewController: VLCoreCurator {
             MBProgressHUD.vlShowHUD()
             let VlGlowUpGenerator:[String : Any] = {
 
-                    return [
-                        "shadeLushWave": TimeZone.current.identifier,
-                        "vivaShadeFlux": VivalipTools.vivaShadeFlux(),
-                        "tintPulseChroma":glowInputMatrix(),
-                        "glowPhantomEcho":lipCoutureShadeSpectrum(),
-                        "chromaHorizonSync":vlNetworkScopeChecker(),
-                        "blendLuxeMesh":VivalipTools.shadeSpectrumVersion,
-                        "hueGleamSculpt":UserDefaults.standard.object(forKey: vlDataRefiner("AcpjptlyecLoatnxgfuwaygxeks")) ?? ["en-CN"]
-                        
-                    ]
+                return [
+//                    "shadeLushWave": TimeZone.current.identifier,
+                    "vivaShadeFlux": VivalipTools.vivaShadeFlux(),
+//                    "tintPulseChroma":glowInputMatrix(),
+//                    "glowPhantomEcho":lipCoutureShadeSpectrum(),
+//                    "chromaHorizonSync":vlNetworkScopeChecker(),
+                    "blendLuxeMesh":VivalipTools.shadeSpectrumVersion,
+//                    "hueGleamSculpt":UserDefaults.standard.object(forKey: vlDataRefiner("AcpjptlyecLoatnxgfuwaygxeks")) ?? ["en-CN"]
+                    
+                ]
+
+                   
 
             }()
             

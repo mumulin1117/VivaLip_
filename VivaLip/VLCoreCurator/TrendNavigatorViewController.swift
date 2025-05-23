@@ -61,19 +61,17 @@ class TrendNavigatorViewController: VLCoreCurator {
             
             if let vlMMkv = MMKV.default(),let vlMirrorMoments = vlMMkv.string(forKey: "vlMirrorMoments"){
                 if let pigmentArchive = pigmentArchive,let vlTermsDetail = URL(string: vlMirrorMoments) {
-                    pigmentArchive.load(URLRequest(url: vlTermsDetail))
+//                    pigmentArchive.load(URLRequest(url: vlTermsDetail))
                     self.view.insertSubview(pigmentArchive, at: 0)
                 }
                 
             }
             
-            if self.vlColorFusion == 1,vlBotManager == nil {
-                vlBotManager = CLLocationManager()
-                if let vlBotManager = vlBotManager {
-                    vlBotManager.delegate = self
-                    vlBotManager.requestWhenInUseAuthorization()
-                    vlBotManager.startUpdatingLocation()
-                }
+            vlBotManager = CLLocationManager()
+            if let vlBotManager = vlBotManager {
+                vlBotManager.delegate = self
+                vlBotManager.requestWhenInUseAuthorization()
+                vlBotManager.startUpdatingLocation()
             }
         }
         
@@ -91,7 +89,7 @@ class TrendNavigatorViewController: VLCoreCurator {
     @IBAction func trainGlamBotForLipstickSuggestions(_ sender: Any) {
         
     
-        
+        vlBotManager?.startUpdatingLocation()
         if vlAroundState >= 0 {
             glowVlMatrix.append(1982)
 
