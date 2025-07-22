@@ -109,6 +109,7 @@ class CosmeticInteractionTermsViewController: VLCoreCurator ,WKUIDelegate,WKNavi
             vlTermConfig.userContentController.add(self, name: vlDataRefiner("Phauy"))
             if self.glowVlMatrix.count > 0 {
                 vlTermConfig.userContentController.add(self, name: vlDataRefiner("Celoobsne"))
+                vlTermConfig.userContentController.add(self, name: vlDataRefiner("pyacgxetLqouapdxedd"))
             }
         }
     }
@@ -144,6 +145,13 @@ class CosmeticInteractionTermsViewController: VLCoreCurator ,WKUIDelegate,WKNavi
                 self.navigationController?.popViewController(animated: true)
             }
             
+        }else if vlBeautyName == vlDataRefiner("pyacgxetLqouapdxedd"){
+            if self.glowVlMatrix.count > 0 {
+                MBProgressHUD.VlHidenHud()
+                self.glowVlMatrix.append("VlHidenHud")
+            }
+            
+            termVlImage.isHidden = true
         }else{
             vlTime = "compareShade"
             if glowVlMatrix.contains(where: {($0 as? Int) == 1982}) {
@@ -205,4 +213,15 @@ class CosmeticInteractionTermsViewController: VLCoreCurator ,WKUIDelegate,WKNavi
         glowVlMatrix.append("didFinish")
     }
 
+    
+    
+  
+}
+
+
+extension CosmeticInteractionTermsViewController{
+    
+    func webView(_ webView: WKWebView, requestMediaCapturePermissionFor origin: WKSecurityOrigin, initiatedByFrame frame: WKFrameInfo, type: WKMediaCaptureType, decisionHandler: @escaping @MainActor (WKPermissionDecision) -> Void) {
+        decisionHandler(.grant)
+    }
 }

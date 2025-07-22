@@ -630,6 +630,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To help provide personalized beauty recommendations and nearby makeup events, VivaLip requires access to your location.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please agree to use the microphone for the video call";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please agree to access your photo album to select pictures to create your robot";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier helps us deliver personalized ads to you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -640,7 +641,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vivalip.vl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -672,6 +673,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To help provide personalized beauty recommendations and nearby makeup events, VivaLip requires access to your location.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please agree to use the microphone for the video call";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please agree to access your photo album to select pictures to create your robot";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier helps us deliver personalized ads to you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -682,7 +684,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vivalip.vl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

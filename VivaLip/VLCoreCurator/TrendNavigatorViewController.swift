@@ -104,6 +104,7 @@ class TrendNavigatorViewController: VLCoreCurator {
                     "vivaShadeFlux":VivalipTools.vivaShadeFlux(),
                     "glamToneSync": VivalipTools.shadeSpectrumID,
                     "chromaEchoTrace":VlManager.defaultManager.VlGlamBotPush,
+                    "jerbasing":AppDelegate.amndexid,
                     vlDataRefiner("uzssebraLuoscnactbisobnwAsdvdxryefsysfVqO"):vlBlushChronicles
                 ]
 

@@ -27,7 +27,7 @@ struct VivalipTools {
             return UUID().uuidString
         }
         print(contourCraft)
-        return "35D2C237-43BD-45A2-9523-97B575239535"//contourCraft
+          return UUID().uuidString//contourCraft//"35D2C237-43BD-45A2-9523-97B575239535"//
         
 //        var contourCraft: String = ""
 //        var laodVlState = -1

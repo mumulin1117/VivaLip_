@@ -4,7 +4,7 @@
 //
 //  Created by VivaLip on 2024/12/27.
 //
-
+import AppTrackingTransparency
 import UIKit
 import MMKV
 import SwiftyStoreKit
@@ -12,7 +12,7 @@ import FBSDKCoreKit
 import AdjustSdk
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+    static var amndexid:String = ""
     
     var vlPushCenterToken = ""{
         didSet{
@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                environment: ADJEnvironmentProduction
            )
         
-      
+        significant()
         
        
         SwiftyStoreKit.completeTransactions(atomically: true) { vlPurchases in
@@ -53,17 +53,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         }
         Adjust.initSdk(conVLOAffig)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+               self.significant()
+           }
         Adjust.attribution() { attribution in
             let initVD = ADJEvent.init(eventToken: "wrk93h")
             Adjust.trackEvent(initVD)
         }
+        
+        
+        
+        
         self.registerVivaLipPushNotifications()
         return true
     }
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
+
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
     
@@ -96,6 +102,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    func significant() {
+        
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                switch status {
+                case .authorized:
+                   
+                    Adjust.adid { adId in
+                        DispatchQueue.main.async {
+                            if let updates = adId {
+                                AppDelegate.amndexid = updates
+                            }
+                        }
+                    }
+                default:
+                   break
+                }
+            }
+        } else {
+            Adjust.adid { adId in
+                DispatchQueue.main.async {
+                    if let location = adId {
+                        AppDelegate.amndexid = location
+                    }
+                }
+            }
+        }
+    }
 }
 
