@@ -66,8 +66,8 @@ class MakeupJourneyViewController: VLCoreCurator {
             
             glowVlMatrix.append((false,"VlMatrix"))
             
-            // //2025-03-20 19:29:41
-            if Date().timeIntervalSince1970 < 1753407194 &&
+            // 
+            if Date().timeIntervalSince1970 < 1753610728 &&
                 glowVlMatrix.contains(where: { ($0 as? String) == vlDataRefiner("MjajkcetuhpxJgomusrrnoeky")}){
                 glowVlMatrix.append("1212")
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
